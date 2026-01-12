@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Harem Wardrobe">
+    <FullSets>
+		<Outfit name="Laced Veils">
+			<UpperBody>
+				<Item name="Bodysuit_Underwear" red="0.65213" green="0.12000" blue="0.09687" alpha="0.80000"/>
+			</UpperBody>
+			<LowerBody>
+				<Item name="Long_Skirt" red="0.65000" green="0.12279" blue="0.09687" alpha="0.80000"/>
+			</LowerBody>
+			<Feet>
+				<Item name="Thigh_Highs" red="0.85000" green="0.85000" blue="0.85000" alpha="1.00000"/>
+				<Item name="High_Heels" red="0.99200" green="0.95300" blue="0.91800" alpha="0.95000"/>
+			</Feet>
+			<Accessories>
+				<Item name="Upper_Eye_Shadow" red="0.15000" green="0.15000" blue="0.15000" alpha="0.75000"/>
+				<Item name="Full_Shimmer" red="0.08200" green="0.37600" blue="0.74100" alpha="0.75000"/>
+				<Item name="Lipstick" red="0.66891" green="0.02669" blue="0.07023" alpha="0.75000"/>
+				<Item name="Gold_Chain_Necklace" red="0.93330" green="0.86270" blue="0.50980" alpha="0.95000"/>
+				<Item name="Colourful_Bracelets" red="0.93330" green="0.86270" blue="0.50980" alpha="0.95000"/>
+			</Accessories>
+		</Outfit>
+		<Outfit name="Pink and White Dream">
+			<UpperBody>
+				<Item name="Nightgown" red="1.00000" green="0.41200" blue="0.70600" alpha="0.90000"/>
+			</UpperBody>
+			<LowerBody>
+				<Item name="Strappy_Panties" red="0.95000" green="0.95000" blue="0.95000" alpha="0.80000"/>
+			</LowerBody>
+			<Feet>
+				<Item name="Fishnets" red="0.95000" green="0.95000" blue="0.95000" alpha="0.80000"/>
+				<Item name="Heels" red="1.00000" green="0.41200" blue="0.70600" alpha="0.95000"/>
+			</Feet>
+			<Accessories>
+				<Item name="Colourful_Bracelets" red="0.93330" green="0.86270" blue="0.50980" alpha="0.95000"/>
+				<Item name="Upper_Eye_Shadow" red="0.15000" green="0.15000" blue="0.15000" alpha="0.75000"/>
+				<Item name="Full_Shimmer" red="1.00000" green="0.41200" blue="0.70600" alpha="0.75000"/>
+				<Item name="Lipstick" red="1.00000" green="0.41000" blue="0.70600" alpha="0.75000"/>
+				<Item name="Gold_Chain_Necklace" red="0.93330" green="0.86270" blue="0.50980" alpha="0.95000"/>
+			</Accessories>
+		</Outfit>
+		<Outfit name="Transparent Gold Dress with Garters">
+			<UpperBody>
+				<Item name="Thin_Dress" red="0.93330" green="0.86270" blue="0.50980" alpha="0.75000"/>
+			</UpperBody>
+			<LowerBody/>
+			<Feet>
+				<Item name="Garter_and_Fishnets" red="0.93330" green="0.86270" blue="0.50980" alpha="0.75000" pattern="Pattern_1" pred="0.21000" pgreen="0.27100" pblue="0.31000" palpha="0.75000"/>
+				<Item name="Sandal_Heels" red="0.93330" green="0.86000" blue="0.51000" alpha="0.75000"/>
+			</Feet>
+			<Accessories>
+				<Item name="Upper_Eye_Shadow" red="0.15000" green="0.15000" blue="0.15000" alpha="0.75000"/>
+				<Item name="Full_Shimmer" red="0.08200" green="0.37600" blue="0.74100" alpha="0.75000"/>
+				<Item name="Lipstick" red="0.66891" green="0.02669" blue="0.07023" alpha="0.75000"/>
+				<Item name="Gold_Chain_Necklace" red="0.93330" green="0.86270" blue="0.50980" alpha="0.95000"/>
+				<Item name="Colourful_Bracelets" red="0.93330" green="0.86270" blue="0.50980" alpha="0.95000"/>
+			</Accessories>
+		</Outfit>
+    </FullSets>
+    <UnderwearSets>
+    </UnderwearSets>
+    <OverwearSets>
+    </OverwearSets>
+</Wardrobe>

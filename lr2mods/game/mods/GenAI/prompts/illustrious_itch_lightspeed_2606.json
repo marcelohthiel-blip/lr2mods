@@ -1,0 +1,216 @@
+{
+	"Name": "Illustrious Itch LightSpeed 2606",
+	"Model": "URPM-SD1.5",
+	"settings": {
+		"cgi": "8",
+		"resolution": "384x512",
+		"steps": "35",
+		"sampler": "DPM++ 3M SDE",
+		"adetailer": "mediapipe_face_full"
+	},
+	"positive_prompt_prefix": "Stable_Yogis_SD1.5_Positives, Stable-Yogis_Makeup-Enhancer-1.5x, Stable-Yogis-Eye-Detailer-5x",
+    "negative_prompt_prefix": "CyberRealistic_Negative-neg",
+	"style_prompt": "1girl, white sclera, thick lips, beautiful face, professional makeup, detailed, realistic, (plain dark background:1.2), volumetric lighting, (straight teeth:0.5), (no panties:0.4), (no bra: 0.4)",
+	"expression_prompt": {
+		"above160": "very happy, smiling, open mouth",
+		"above120": "happy, smiling",
+		"above100": "happy",
+		"sad": "sad",
+		"angry": "angry"
+	},
+	"age_prompt_pos": {
+		"above60": "(old woman:1.4)",
+		"above50": "(mature woman:1.4)",
+		"above30": "(adult woman:1.2)",
+		"above20": "(young woman:1.1)",
+		"above17": "(college girl:1.1)"
+	},
+	"age_prompt_neg": {
+		"above60": "young",
+		"above50": "young",
+		"above30": "young",
+		"above20": "child",
+		"above17": "child"
+	},
+	"breasts_prompt": [
+		"(flat chest:1.2)",
+		"tiny breasts",
+		"small breasts",
+		"medium breasts",
+		"average breasts",
+		"large breasts",
+		"(large breasts:1.1)",
+		"(large breasts:1.2)",
+		"(huge breasts:1.2), (detailed nipples:0.6)",
+		"(huge breasts:1.5), (detailed nipples:0.6)"
+	],
+	"body_type_prompt":{
+		"default": "fit body, (fat body:-1)",
+		"thin": "sexy thin body",
+		"curvy": "curvy body",
+		"default_preg": "pregnant"
+	},
+	"position_prompt": {
+		"default": "(full body portrait:1.4), facing viewer, standing",
+		"stand2": "(full body portrait:1.4), facing viewer, standing, one hand on hip",
+		"stand3": "(full body portrait:1.4), facing viewer, standing, hands behind head",
+		"stand4": "(full body portrait:1.4), facing viewer, standing, hands crossed",
+		"stand5": "(full body portrait:1.4), facing viewer, standing, striking a pose",
+		"walking_away": "walking away, back view, (ass presentation:1.2)",
+		"kissing": "kissing, (selfie:1.3), open mouth, closed eyes, (phone|camera:-1)",
+		"doggy": "(doggystyle|kneeling|squatting|crawling|on all fours:1.1), (mouth open:0.4), (ass:0.8), (ass presentation:1.3), (anus|pussy:0.6), (blowjob:-1)",
+		"missionary": "(presenting pussy:1.4), (pussy|vulva:1.5)",
+		"blowjob": "(yelling|screaming|yawning:1.2), (dripping saliva|dripping cum|cumshot:1.3), (kneeling|squatting:0.3), (looking at viewer|high angle:0.9), (tongue:0.2)",
+		"against_wall": "leaning back, (pussy presentation:1.4), (spreading legs:1.1), low angle, cum on belly, creampie",
+		"back_peek": "back view, standing, back turned, lifting ass, squeezing ass, (ass presentation:1.2), (leaning:-0.8), (kneeling:-0.9), (bending down:-1), (bending down:-1)",
+		"sitting": "sitting on a (chair), establishing shot",
+		"kneeling1": "(kneeling:1.1), leaning back, legs spread, low angle",
+		"standing_doggy": "(leaning forward:1.2), (ass presentation:1.5)",
+		"cowgirl": "squatting, open mouth, (arched back), leaning back, sweaty skin, sweaty face, sweat dripping from chin, wide shot, (pussy presentation:1.2), (panties:-1), dripping pussy"
+	},
+	"skin_prompt": {
+		"replacements": [
+		{
+			"from": "white skin",
+			"to": "(scandinavian:1.2)"
+		},
+		{
+			"from": "tan skin",
+			"to": "(hispanic|latina:1.1), (tan|tanned)"
+		},
+		{
+			"from": "black skin",
+			"to": "(dark skin:1.1)"
+		}
+		]
+	},
+	"outfit_prompt": {
+		"replacements": [
+		{
+			"from": "Capris",
+			"to": "capri pants"
+		},
+		{
+			"from": "Daisy Dukes",
+			"to": "denim short shorts"
+		},
+		{
+			"from": "Sandles",
+			"to": "sandals"
+		},
+		{
+			"from": "Teddy",
+			"to": "lace negligee, (no panties:0.6)"
+		},
+		{
+			"from": "Cincher",
+			"to": "topless corset"
+		},
+		{
+			"from": "Kitty Babydoll",
+			"to": "lace nightgown, (no panties:0.9)"
+		},
+		{
+			"from": "Pinafore",
+			"to": "topless corset dress"
+		},
+		{
+			"from": "Virgin Killer",
+			"to": "corset, (long skirt:1.1)"
+		},
+		{
+			"from": "Belted skirt",
+			"to": "pleated skirt with belt"
+		},
+		{
+			"from": "Business Vest",
+			"to": "(vest:1.1)"
+		},
+		{
+			"from": "Belted Top",
+			"to": "crop-top shirt"
+		},
+		{
+			"from": "Frilly Longsleeve",
+			"to": "shirt with frills"
+		},
+		{
+			"from": "Bathrobe",
+			"to": "short open robe"
+		},
+		{
+			"from": "Suit Jacket",
+			"to": "short open shirtless blazer"
+		},
+		{
+			"from": "Vest",
+			"to": "leather vest"
+		},
+		{
+			"from": "Coat",
+			"to": "long lab coat"
+		},
+		{
+			"from": "X",
+			"to": "Y"
+		}
+		]
+	},
+	"details_prompt": {
+		"replacements": [
+		{
+			"from": "saturated",
+			"to": "bleached blonde"
+		},
+		{
+			"from": "barn red",
+			"to": "dark red"
+		},
+		{
+			"from": "strawberry blonde",
+			"to": "blonde"
+		},
+		{
+			"from": "chocolate brown",
+			"to": "brown"
+		},
+		{
+			"from": "knight red",
+			"to": "bright red"
+		},
+		{
+			"from": "pulp",
+			"to": "pink"
+		},
+		{
+			"from": "chestnut",
+			"to": "brown"
+		},
+		{
+			"from": "sky blue",
+			"to": "bright blue"
+		},
+		{
+			"from": "toasted wheat",
+			"to": "blonde"
+		},
+		{
+			"from": "X",
+			"to": "Y"
+		},
+		{
+			"from": "X",
+			"to": "Y"
+		},
+		{
+			"from": "X",
+			"to": "Y"
+		},
+		{
+			"from": "X",
+			"to": "Y"
+		}
+		]
+	},
+	"negative_prompt": "2girls, 3girls, double portrait, side by side, child, loli, asian, skin folds, ugly, low quality, watermark, camera, phone, pole, metal stand, photo camera, video camera, worst quality, cross-eyed, deformed, malformed, defect, long body, duplicated, distorted, cloned, mirrored, bad hands, missing digits, missing fingers, duplicate body parts, disfigured, extra limbs, fused fingers, extra fingers, twisted, malformed hands, malformed fingers, mutated hands, conjoined, missing limbs, mutated, mutilated, artifacts, gross, broken, small head, deformed eyes, deformed face, cartoon, anime, multiple anus, elf ears, face mask"
+}

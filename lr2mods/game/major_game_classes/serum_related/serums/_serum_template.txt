@@ -1,0 +1,61 @@
+## SERUM TRAIT GUIDELINES ##
+# These are some guidelines for how serum traits are priced out.
+# Each tier of serum trait should provide 2*(tier+1) aspect points.
+# Add 1 extra aspect point per point of attention.
+
+# Serum trait functions. Each serum trait can have up to four key functions: on_apply, on_remove, on_turn, and on_day. These are run at various points throughout the game.
+
+#####
+# Serum Trait template. Copy and paste this, fill in the fields that are required and add it to the list_of_traits list to add a serum trait to LR2.
+#####
+#
+# serum = SerumTrait(name = "serum name",
+#     desc = "serum description",
+#     positive_slug = "description of the positive effects",
+#     negative_slug = "description of the negative effects",
+#     research_added = a_number,
+#     slots_added = a_number,
+#     production_added = a_number,
+#     duration_added = a_number,
+#     base_side_effect_chance = a_number,
+#     clarity_added = a_number,
+#     on_apply = a_function,
+#     on_remove = a_function,
+#     on_turn = a_function,
+#     on_day = a_function,
+#     requires = [list_of_other_traits],
+#     tier = a_number,
+#     start_researched = a_bool,
+#     research_needed = a_number,
+#     exclude_tags = [list_of_other_tags],
+#     is_side_effect = a_bool,
+#     clarity_cost = a_number,
+#     mental_aspect = 0, physical_aspect = 0, sexual_aspect = 0, medical_aspect = 0, flaws_aspect = 0, attention = 0)
+
+#####
+# Serum Trait Blueprint template. Copy and paste this, fill in the fields that are required and add it to the list_of_traits list to add a serum trait to LR2.
+#####
+
+# the_serum = SerumTraitBlueprint(name = "serum name",
+#     unlock_label = "a label",
+#     desc = "serum description",
+#     positive_slug = "description of the positive effects",
+#     negative_slug = "description of the negative effects",
+#     value_added = a_number,
+#     research_added = a_number,
+#     slots_added = a_number,
+#     production_added = a_number,
+#     duration_added = a_number,
+#     base_side_effect_chance = a_number,
+#     clarity_added = a_number,
+#     on_apply = a_function,
+#     on_remove = a_function,
+#     on_turn = a_function,
+#     on_day = a_function,
+#     requires = [list_of_other_traits],
+#     tier = a_number,
+#     start_researched = a_bool,
+#     research_needed = a_number,
+#     exclude_tags = [list_of_other_tags],
+#     is_side_effect = a_bool,
+#     clarity_cost = a_number)

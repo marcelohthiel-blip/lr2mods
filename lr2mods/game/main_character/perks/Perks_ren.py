@@ -1,0 +1,302 @@
+from __future__ import annotations
+from typing import Callable
+from game.main_character.MainCharacter_ren import MainCharacter, mc
+from game.major_game_classes.character_related.Person_ren import Person
+
+perk_system: Perks
+day = 0
+"""renpy
+IF FLAG_OPT_IN_ANNOTATIONS:
+    rpy python annotations
+init -1 python:
+"""
+from abc import abstractmethod
+
+class Perks():
+    def __init__(self):
+        self.stat_perks: dict[str, Stat_Perk] = {}
+        self.item_perks: dict[str, Item_Perk] = {}
+        self.ability_perks: dict[str, Ability_Perk] = {}
+
+    def update(self):  #By adding an update, we can add temporary perks that may expire.
+        def expired_perks(perk_dict: dict[str, PerkBase]):
+            return [k for k, v in perk_dict.items() if v.bonus_is_temp and day >= v.duration + v.start_day]
+
+        for group in (self.stat_perks, self.item_perks, self.ability_perks):
+            for perk_name in expired_perks(group):
+                self.remove_perk(perk_name)
+
+        for perk in (x for x in self.ability_perks.values() if x.active):
+            perk.update()
+
+    def remove_perk(self, perk_name: str):
+        group: dict[str, PerkBase]
+        for group in (self.stat_perks, self.item_perks, self.ability_perks):
+            if perk_name in group:
+                group[perk_name].remove()
+                group.pop(perk_name, None)
+
+    def save_load(self):
+        group: dict[str, PerkBase]
+        for group in (self.stat_perks, self.item_perks, self.ability_perks):
+            for name, perk in group.items():
+                perk.name = name
+                if callable(perk.save_load):
+                    perk.save_load()
+
+    def get_perk_desc(self, perk_name: str):
+        group: dict[str, PerkBase]
+        for group in (self.stat_perks, self.item_perks, self.ability_perks):
+            if perk_name in group:
+                return group[perk_name].description
+        return "None"
+
+    def add_stat_perk(self, perk: Stat_Perk, perk_name: str):
+        if self.has_stat_perk(perk_name):
+            self.get_stat_perk(perk_name).update_expiration(perk)
+        else:
+            perk.name = perk_name
+            self.stat_perks[perk_name] = perk
+            if callable(perk.on_unlock):
+                perk.on_unlock()
+            perk.apply()
+
+    def has_stat_perk(self, perk_name: str) -> bool:
+        return perk_name in self.stat_perks
+
+    def get_stat_perk(self, perk_name: str) -> Stat_Perk:
+        if self.has_stat_perk(perk_name):
+            return self.stat_perks[perk_name]
+        return None
+
+    def add_item_perk(self, perk: Item_Perk, perk_name: str):
+        if self.has_item_perk(perk_name):
+            self.get_item_perk(perk_name).update_expiration(perk)
+        else:
+            perk.name = perk_name
+            self.item_perks[perk_name] = perk
+            if callable(perk.on_unlock):
+                perk.on_unlock()
+
+    def has_item_perk(self, perk_name: str) -> bool:
+        return perk_name in self.item_perks
+
+    def get_item_perk(self, perk_name: str) -> Item_Perk:
+        if self.has_item_perk(perk_name):
+            return self.item_perks[perk_name]
+        return None
+
+    def add_ability_perk(self, perk: Ability_Perk, perk_name: str):
+        if self.has_ability_perk(perk_name):
+            self.get_ability_perk(perk_name).update_expiration(perk)
+        else:
+            perk.name = perk_name
+            self.ability_perks[perk_name] = perk
+            if callable(perk.on_unlock):
+                perk.on_unlock()
+
+    def has_ability_perk(self, perk_name: str) -> bool:  #Only checks if the ability is available at all
+        return perk_name in self.ability_perks
+
+    def get_ability_perk(self, perk_name: str) -> Ability_Perk:
+        if self.has_ability_perk(perk_name):
+            return self.ability_perks[perk_name]
+        return False
+
+    def get_ability_active(self, perk_name: str):
+        if self.has_ability_perk(perk_name):
+            return self.ability_perks[perk_name].is_active
+        return False
+
+    def perk_on_cum(self, person: Person, opinion: str, add_to_log = True):
+        for perk in self.ability_perks.values():
+            perk.on_cum(person, opinion, add_to_log)
+
+    @property
+    def clarity_multiplier(self) -> float:
+        multiplier = 1.0
+        if self.has_ability_perk("Intelligent Clarity"):
+            multiplier += (mc.int * .05) #5% increase per intelligence point
+        if self.has_ability_perk("Charismatic Clarity"):
+            multiplier += (mc.charisma * .05) #5% increase per charisma point
+        if self.has_ability_perk("Focused Clarity"):
+            multiplier += (mc.focus * .05) #5% increase per charisma point
+        return multiplier
+
+class PerkBase():
+    def __init__(self, description: str = None,
+            owner = None,
+            bonus_is_temp = False, duration = 0,
+            on_unlock = None, save_load = None):
+
+        self.owner = owner or mc
+        self.name = ""  # generated by save load
+        self.description = description or ""
+        self.bonus_is_temp = bonus_is_temp   #Should we take away this ability
+        self.duration = duration
+        self.start_day = day
+        self.on_unlock = on_unlock
+        self.save_load = save_load
+
+    @abstractmethod
+    def remove(self):
+        pass
+
+    @property
+    def title(self):
+        return self.name
+
+    def update_expiration(self, new_perk: PerkBase):
+        if not self.bonus_is_temp:
+            return
+        if self.duration < new_perk.duration:
+            self.duration = new_perk.duration
+        if self.start_day < new_perk.start_day:
+            self.start_day = new_perk.start_day
+
+    def __hash__(self):
+        return hash(self.description)
+
+    def __eq__(self, other: PerkBase) -> bool:
+        if not isinstance(other, PerkBase):
+            return NotImplemented
+        return self.description == other.description
+
+class Stat_Perk(PerkBase):
+    # owner can be MC or any other Person object (default is MC)
+    # when owner is Person object we can add temporary stats without using a serum
+    def __init__(self, description: str, owner = None, cha_bonus = 0, int_bonus = 0, foc_bonus = 0,
+            hr_bonus = 0, market_bonus = 0, research_bonus = 0, production_bonus = 0, supply_bonus = 0,
+            foreplay_bonus = 0, oral_bonus = 0, vaginal_bonus = 0, anal_bonus = 0, energy_bonus = 0,
+            stat_cap = 0, skill_cap = 0, sex_cap = 0, energy_cap = 0,
+            bonus_is_temp = False, duration = 0, on_unlock = None, save_load = None):
+        super().__init__(description, owner, bonus_is_temp, duration, on_unlock, save_load)
+
+        self.cha_bonus = cha_bonus
+        self.int_bonus = int_bonus
+        self.foc_bonus = foc_bonus
+        self.hr_bonus = hr_bonus
+        self.market_bonus = market_bonus
+        self.research_bonus = research_bonus
+        self.production_bonus = production_bonus
+        self.supply_bonus = supply_bonus
+        self.foreplay_bonus = foreplay_bonus
+        self.oral_bonus = oral_bonus
+        self.vaginal_bonus = vaginal_bonus
+        self.anal_bonus = anal_bonus
+        self.energy_bonus = energy_bonus
+        self.stat_cap = stat_cap
+        self.skill_cap = skill_cap
+        self.sex_cap = sex_cap
+        self.energy_cap = energy_cap
+
+    def apply(self):
+        self.owner.charisma += self.cha_bonus
+        self.owner.int += self.int_bonus
+        self.owner.focus += self.foc_bonus
+        self.owner.hr_skill += self.hr_bonus
+        self.owner.market_skill += self.market_bonus
+        self.owner.research_skill += self.research_bonus
+        self.owner.production_skill += self.production_bonus
+        self.owner.supply_skill += self.supply_bonus
+        self.owner.sex_skills["Foreplay"] += self.foreplay_bonus
+        self.owner.sex_skills["Oral"] += self.oral_bonus
+        self.owner.sex_skills["Vaginal"] += self.vaginal_bonus
+        self.owner.sex_skills["Anal"] += self.anal_bonus
+        self.owner.max_energy += self.energy_bonus
+        if isinstance(self.owner, MainCharacter):
+            self.owner.max_stats += self.stat_cap
+            self.owner.max_work_skills += self.skill_cap
+            self.owner.max_sex_skills += self.sex_cap
+            self.owner.max_energy_cap += self.energy_cap
+
+    def remove(self):
+        self.owner.charisma -= self.cha_bonus
+        self.owner.int -= self.int_bonus
+        self.owner.focus -= self.foc_bonus
+        self.owner.hr_skill -= self.hr_bonus
+        self.owner.market_skill -= self.market_bonus
+        self.owner.research_skill -= self.research_bonus
+        self.owner.production_skill -= self.production_bonus
+        self.owner.supply_skill -= self.supply_bonus
+        self.owner.sex_skills["Foreplay"] -= self.foreplay_bonus
+        self.owner.sex_skills["Oral"] -= self.oral_bonus
+        self.owner.sex_skills["Vaginal"] -= self.vaginal_bonus
+        self.owner.sex_skills["Anal"] -= self.anal_bonus
+        self.owner.max_energy -= self.energy_bonus
+        # make sure energy is not > max energy
+        if self.owner.energy > self.owner.max_energy:
+            self.owner.energy = self.owner.max_energy
+
+        if isinstance(self.owner, MainCharacter):
+            self.owner.max_stats -= self.stat_cap
+            self.owner.max_work_skills -= self.skill_cap
+            self.owner.max_sex_skills -= self.sex_cap
+            self.owner.max_energy_cap -= self.energy_cap
+
+class Item_Perk(PerkBase):
+    # owner can be MC or any other Person object (default is MC)
+    def __init__(self, description: str, owner = None, usable = False, bonus_is_temp = False, duration = 0, on_unlock = None, save_load = None):
+        super().__init__(description, owner, bonus_is_temp, duration, on_unlock, save_load)
+
+        self.usable = usable
+
+
+class Ability_Perk(PerkBase):
+    def __init__(self, description: str, owner = None, active = True, togglable = False, usable = False, bonus_is_temp = False, duration = 0,
+                 usable_func: Callable[[], None] = None, usable_cd = 0,
+                 update_func: Callable[[], None] = None,
+                 on_unlock = None, save_load = None,
+                 cum_func: Callable[[Person, str, bool], None] = None):
+        super().__init__(description, owner, bonus_is_temp, duration, on_unlock, save_load)
+        self.usable = usable            #Is this a usable ability
+        self.usable_func = usable_func  #What to do if ability is used
+        self.usable_cd = usable_cd      #How long to wait after this ability to use it again.
+        self.togglable = togglable     #Can you toggle this ability
+        self.active = active            #Is this ability currently active
+        self.usable_day = 0
+        self.update_func = update_func
+        self.cum_func = cum_func
+
+    def execute(self):
+        if self.usable:
+            # print("Execute Perk")
+            self.activate_perk()
+        if self.togglable:
+            # print("Toggle Perk")
+            self.toggle_perk()
+
+    @property
+    def is_active(self):
+        if self.togglable:
+            return self.active
+        if self.usable and self.usable_day <= day:
+            return True
+        return False
+
+    def activate_perk(self):
+        if self.usable and self.usable_day <= day:
+            self.usable_func()
+            self.usable_day = day + self.usable_cd
+            return True
+        return False
+
+    @property
+    def title(self):
+        if self.togglable:
+            return f"{self.name} {'(Active)' if self.active else '(Inactive)'}"
+        if self.usable and self.usable_day > day:
+            return f"{self.name} (On Cooldown)"
+        return self.name
+
+    def toggle_perk(self):
+        if self.togglable:
+            self.active = not self.active
+
+    def update(self):
+        if self.active and callable(self.update_func):
+            self.update_func()
+
+    def on_cum(self, person: Person = None, opinion: str = None, add_to_log = True):
+        if self.active and callable(self.cum_func):
+            self.cum_func(person, opinion, add_to_log)

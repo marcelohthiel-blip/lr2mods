@@ -1,0 +1,60 @@
+
+#### average sextime enjoyer
+$ the_report = _return
+if the_report.get("guy orgasms", 0) > 0 and the_report.get("girl orgasms", 0) >0:
+    the_person "Wow, you weren't the only one who needed that, apparently."
+    "You both take a moment, panting softly as you recover from your orgasms."
+    mc.name "Well I'm feeling much better now [the_person.title]."
+    the_person "Me too. Come by again if you need some more help, okay?"
+    mc.name "I'm not going to say no to that."
+elif the_report.get("guy orgasms", 0) > 0:
+    the_person "There, all taken care of. Hope that helps [the_person.mc_title]."
+    mc.name "I'm feeling much better. Thanks [the_person.title]."
+    the_person "For you, any time."
+    "You stuff your cock back in your pants and leave [the_person.possessive_title]'s bedroom."
+elif the_report.get("girl orgasms", 0) > 0:
+    the_person "Wow, I guess I needed that even more than you did."
+    $ the_person.change_obedience(-(2 + the_person.opinion.taking_control))
+    the_person "Sorry [the_person.mc_title], I'll make sure to finish you off next time, okay?"
+    mc.name "Next time, huh? I can get behind that."
+else:
+    the_person "I'm sorry [the_person.mc_title]. I guess I need a little more practice."
+    the_person "Maybe we can do this again later and I can make it up to you, okay?"
+    mc.name "Sure, I'm not going to say no to that."
+
+#### Other fun conditions to consider ####
+if the_report.get("is_angry", False):
+    $ the_person.change_stats(happiness = -5, love = -5, obedience = -5)
+    $ the_person.draw_person(position = "stand4", emotion = "angry")
+    the_person "Did you really think I would let you fuck me like that?!"
+
+if the_report.get("creampies", 0) >= 3:         #Also, "facials", "body_cum", "cum on tits", "cum on stomach", "cum on ass", "mouth_cum", "anal creampies"
+    "[the_person.title] puts a hand between her legs, gasping as it touches the hot cum still rushing out of her overflowing pussy."
+    the_person "Oh god, there's so much! I want it all inside me but there's just too much!"
+    $ mc.change_locked_clarity(50)
+
+if skull_fuck in the_report.get("positions_used", []):  #You really roughed her up
+    "[the_person.possessive_title!c] mascara is running from tears caused by being gagged when you roughly fucked her throat."
+    mc.name "I know that this story had a happy ending, with the patent going to the Red Cross, but remember, this is my business. Don't do things behind my back again."
+    $ the_person.change_stats(obedience = 10, love = -10, slut = 3, max_slut = 70)
+
+if the_report.get("was_public", False): #It was public
+    the_person "Everyone is watching... Fuck, would my husband get turned on when he hears about it?"
+    mc.name "Maybe a friend saw us and tells him."
+    the_person "I hope you're right—that would be so exciting..."
+
+if the_report.get("obedience_used", False):
+    the_person "Fuck, I didn't think I would like it like that... but that was amazing..."
+    mc.name "A little trust goes a long way."
+
+
+#### Training after
+if the_person.has_role(trance_role) and the_person.event_triggers_dict.get("trance_training_available", False):
+    "You pause. [the_person.possessive_title!c] seems to be in a trance after your encounter."
+    "This might be your chance to put some new thoughts in her head."
+    menu:
+        "Train her":
+            call do_training(the_person) from _call_do_training_template_trance_01
+
+        "Leave her alone":
+            pass

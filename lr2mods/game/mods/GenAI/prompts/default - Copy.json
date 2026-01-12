@@ -1,0 +1,93 @@
+{
+	"Name": "default",
+	"Model": "",
+	"Description": "The default prompt profile. It has potential to work with any model, but is not optimized for any specific model.",
+	"settings": {
+		"cgi": "7.0",
+		"resolution": "513x768",
+		"steps": "20",
+		"sampler": "Euler a",
+		"adetailer": ""
+	},
+	"positive_prompt_prefix" : "",
+    "negative_prompt_prefix" : "",
+	"style_prompt": "full body portrait, plain black background, solo portrait",
+	"expression_prompt": {
+		"above160": "very happy",
+		"above120": "happy",
+		"above100": "smile",
+		"sad": "sad",
+		"angry": "angry"
+	},
+	"age_prompt": {
+		"above60": {
+			"pos": "grandmother",
+			"neg": "teen, child, young"
+		},
+		"above50": {
+			"pos": "middle age",
+			"neg": "teen, child, young"
+		},
+		"above30": {
+			"pos": "young adult",
+			"neg": "teen, child, young"
+		},
+		"above20": {
+			"pos": "college age",
+			"neg": "teen, child, young"
+		},
+		"above17": {
+			"pos": "teen",
+			"neg": "child"
+		},
+		"add_explicit_age_prompt": true
+	},
+	"breasts_prompt": {
+		"AA": "flat chest",
+		"A": "small breasts",
+		"B": "small breasts",
+		"C": "medium breasts",
+		"D": "medium breasts",
+		"DD": "large breasts",
+		"DDD": "large breasts",
+		"E": "huge breasts",
+		"F": "huge breasts",
+		"FF": "huge breasts"
+	},
+	"body_type_prompt":{
+		"default": "standard body",
+		"thin": "thin body",
+		"curvy": "curvy body",
+		"default_preg": "pregnant"
+	},
+	"position_prompt": {
+		"default": "standing",
+		"stand2": "standing",
+		"stand3": "standing",
+		"stand4": "standing",
+		"stand5": "standing",
+		"walking_away": "facing away, back",
+		"kissing": "kissing",
+		"doggy": "crawling",
+		"missionary": "lying down",
+		"blowjob": "giving a blowjob",
+		"against_wall": "having sex against a wall",
+		"back_peek": "back peek",
+		"sitting": "sitting",
+		"kneeling1": "kneeling",
+		"standing_doggy": "crawling",
+		"cowgirl": "having sex in a cowgirl position"
+	},
+	"skin_prompt": {
+		"substitutions": {}
+	},
+	"outfit_prompt": {
+		"substitutions": {}
+	},
+	"details_prompt": {
+		"substitutions": {
+			"saturated": "bleached blonde"
+		}
+	},
+	"negative_prompt": "2girls, greyscale, monochrome, cg, render, unreal engine, low quality, watermark"
+}

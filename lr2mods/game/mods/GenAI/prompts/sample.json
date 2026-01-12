@@ -1,0 +1,436 @@
+{
+   "#": "Fields with this name are used for comments and as a documentation, they are not parsed by the prompt builder.",
+   "#": "It's not recommended to copy this file directly. Copy default.json instead and use this file for reference only.",
+   "Name": "Sample",
+   "Model": "perfectionCinematicILXL_v20",
+   "ModelURL": "https://civitai.com/models/1438411/perfection-cinematic-ilxl-illustrious-xl-nsfw-sfw-checkpoint",
+   "Description": "A sample prompt profile. Not likely to work well but implements all the features of the prompt builder and has comments. Good for a reference when making your own prompt profiles.",
+   "settings": {
+      "cgi": "4.0",
+      "resolution": "832x1216",
+      "steps": "24",
+      "sampler": "DPM++ 3M SDE",
+      "adetailer": "face_yolov8n.pt"
+   },
+   "loras": [
+	   {
+		   "Name": "flat_chested_v_4_1821-4",
+		   "URL": "https://civitai.com/models/990415?modelVersionId=1109661"
+	   },
+	   {
+		   "Name": "back_view",
+		   "URL": "https://civitai.com/models/1371432/back-view"
+	   }
+   ],
+   "style_prompt": "full body portrait, d780 80mm lens, photorealistic, black background",
+
+   "#": "Add prompts depending on the face of the person.",
+   "face_prompt": {
+		"random": {
+			"pos": "attractive",
+			"neg": ""
+		},
+		"alexia": {
+			"pos": "",
+			"neg": ""
+		},
+		"ashley": {
+			"pos": "",
+			"neg": ""
+		},
+		"camila": {
+			"pos": "",
+			"neg": ""
+		},
+		"candace": {
+			"pos": "",
+			"neg": ""
+		},
+		"christina": {
+			"pos": "",
+			"neg": ""
+		},
+		"christine": {
+			"pos": "",
+			"neg": ""
+		},
+		"ellie": {
+			"pos": "",
+			"neg": ""
+		},
+		"emily": {
+			"pos": "",
+			"neg": ""
+		},
+		"erica": {
+			"pos": "",
+			"neg": ""
+		},
+		"gabrielle": {
+			"pos": "",
+			"neg": ""
+		},
+		"iris": {
+			"pos": "",
+			"neg": ""
+		},
+		"jennifer": {
+			"pos": "",
+			"neg": ""
+		},
+		"kaya": {
+			"pos": "",
+			"neg": ""
+		},
+		"lily": {
+			"pos": "",
+			"neg": ""
+		},
+		"myrabelle": {
+			"pos": "",
+			"neg": ""
+		},
+		"naomi": {
+			"pos": "",
+			"neg": ""
+		},
+		"nora": {
+			"pos": "",
+			"neg": ""
+		},
+		"ophelia": {
+			"pos": "",
+			"neg": ""
+		},
+		"penelope": {
+			"pos": "",
+			"neg": ""
+		},
+		"rebecca": {
+			"pos": "",
+			"neg": ""
+		},
+		"sakari": {
+			"pos": "",
+			"neg": ""
+		},
+		"sarah": {
+			"pos": "",
+			"neg": ""
+		},
+		"starbuck": {
+			"pos": "",
+			"neg": ""
+		},
+		"stephanie": {
+			"pos": "",
+			"neg": ""
+		},
+		"dinah": {
+			"pos": "",
+			"neg": ""
+		},
+		"sylvia": {
+			"pos": "",
+			"neg": ""
+		},
+		"paige": {
+			"pos": "",
+			"neg": ""
+		},
+		"kendra": {
+			"pos": "",
+			"neg": ""
+		},
+		"svetlanna": {
+			"pos": "",
+			"neg": ""
+		},
+		"kelly": {
+			"pos": "",
+			"neg": ""
+		},
+		"Sativa": {
+			"pos": "",
+			"neg": ""
+		},
+		"Nuoyi": {
+			"pos": "",
+			"neg": ""
+		},
+		"Lynn": {
+			"pos": "",
+			"neg": ""
+		},
+		"Svenja": {
+			"pos": "",
+			"neg": ""
+		},
+		"Anna": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_1": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_2": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_3": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_4": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_5": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_6": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_7": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_8": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_9": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_10": {
+			"pos": "not used",
+			"neg": "not used in LR2R, so avoid using this one"
+		},
+		"Face_11": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_12": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_13": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_14": {
+			"pos": "",
+			"neg": ""
+		},
+		"use_story_faces_prompt": true,
+		"use_unique_faces_prompt": true,
+		"use_random_faces_prompt": true
+	},
+
+   "eye_prompt": {
+		"dark blue": "dark blue eyes",
+		"light blue": "light blue eyes",
+		"brown": "warm brown eyes",
+		"piercing blue": "piercing blue eyes",
+		"grey": "grey eyes",
+		"green": "green eyes",
+		"emerald": "emerald green eyes",
+		"steel blue": "steel blue eyes",
+		"dark brown": "dark brown eyes",
+		"sparkling green": "sparkling green eyes",
+		"neutral-toned": "realistic eyes",
+		"default": "realistic eyes"
+	},
+
+   "#": "Add prompts depending on current happiness value of a person.",
+   "expression_prompt": {
+      "#": "Simple format. Adds a positive prompt if happiness is above 160.",
+      "above160": "happy, grin",
+
+      "#": "Complex format. Adds both positive and negative prompts.",
+      "above120": {
+         "pos": "happy, smile",
+         "neg": "grin"
+      },
+
+      "above100": "happy",
+      "sad": "happy",
+      "angry": "happy"
+   },
+
+   "#": "Add prompts depending on a person's age. Values format is the same as in the expression_prompt.",
+   "age_prompt": {
+      "above60": {
+         "pos": "grandmother",
+         "neg": "teen, child, young"
+      },
+      "above50": {
+         "pos": "middle age",
+         "neg": "teen, child, young"
+      },
+      "above30": {
+         "pos": "young adult",
+         "neg": "teen, child, young"
+      },
+      "above20": {
+         "pos": "college age",
+         "neg": "teen, child, young"
+      },
+      "above17": {
+         "pos": "teen",
+         "neg": "child"
+      },
+      "add_explicit_age_prompt": true
+   },
+
+   "#": "Add prompts depending on a person's breasts size. Values format is the same as in the expression_prompt.",
+   "breasts_prompt": {
+      "AA": "<lora:flat_chested_v_4_1821-4:1>  flat chested",
+      "A": "small breasts",
+      "B": "small breasts",
+      "C": "medium breasts",
+      "D": "medium breasts",
+      "DD": "large breasts",
+      "DDD": "large breasts",
+      "E": "huge breasts",
+      "F": "huge breasts",
+      "FF": "huge breasts"
+   },
+
+   "#": "Add prompts depending on a person's body type. Values format is the same as in the expression_prompt.",
+   "body_type_prompt": {
+      "default": "fit [curvy]  body",
+      "thin": "slim body",
+      "curvy": "full-figured (curvy:1.5) feminine body",
+      "default_preg": "pregnant"
+   },
+
+   "#": "Add prompts depending on a person's current pose. Values format is the same as in the expression_prompt with some additional fields.",
+   "position_prompt": {
+      "default": "standing",
+      "stand2": "(standing up), one hand on hip, posing",
+      "stand3": "(standing up), posing, (from below:1.3)",
+      "stand4": "(standing up), one hand on hip, posing",
+      "stand5": "(standing up), one hand on hip, posing",
+      "walking_away": {
+         "pos": "solo portrait, single portrait, ((walking away)), showing her back, looking away, <lora:back_view:1>",
+
+         "#": "Determines if feet-relevant (shoes, socks etc.) prompts should be added to the final prompt when in this position.",
+         "feet_visible": true,
+
+         "#": "Determines if leg-relevant (thighhighs etc.) prompts should be added to the final prompt when in this position.",
+         "legs_visible": true,
+
+         "#": "Determines if face-relevant (eyes etc.) prompts should be added to the final prompt when in this position.",
+         "face_visible": false,
+
+         "#": "Determines if breasts-relevant (breast size etc.) prompts should be added to the final prompt when in this position.",
+         "breasts_visible": false,
+
+         "#": "If prompt builder finds the exact same prompt part in both negative in positive prompts, it will remove that part from the positive prompt.",
+         "#": "Use this when you want to override a person's expression in the current position.",
+         "neg": "happy"
+      },
+      "kissing": "standing up, french kiss, kissing a man, man with dark hair, hetero, couple, <lora:french_kiss_xl_v1:1>",
+      "doggy": "crawling on hands and knees, crawling on the ground, facing away, doggy style sex, dggy, pov, intercourse, penetration, fucking, <lora:dggy:1>",
+      "missionary": "lying down on her back, legs apart, pov, missionary sex, fucking, intercourse, penis, dick, spreading pussy, <MissionaryVaginal-v1-SDXL:1>",
+      "blowjob": "giving a deepthroat blowjob, deepthroating, huge cumshot, pov, running mascara, <lora:Deepthroating:1>",
+      "against_wall": "standing missionary sex with a man, touching wall, hetero, couple",
+      "back_peek": "single girl, solo portrait, ((standing up)), single portrait, standing up, back peek, back view, looking back, legs spread, spreading ass, gaping asshole, wide gaping anus, gaping pussy, mouth open, spreading pussy, pink anus, cum on mouth and chin, dripping pussy, dripping anus, <lora:Butthole_Rear_v1_XL:0.6>",
+      "sitting": "sitting on a chair, gaping pussy, labia spread open, dripping pussy, spreading pussy, pink anus, pink asshole, <lora:NsfwPovAllInOneLoraSdxl:0.2>",
+      "kneeling1": "kneeling, mouth open, tongue out, close-up shot, cum dripping from mouth, facial, cumshot, <lora:Cumshot:0.5>",
+      "standing_doggy": "standing doggystyle sex with a man, rough sex, sex from behind, fucking, hetero couple, [lifting leg], <lora:standing_sex_from_behind_XL4_V1.0:0.5> <lora:Bent_over_a_table:0.8> <lora:legupsex_XL_9_:0.3>",
+      "cowgirl": "having sex in a cowgirl position with a european man, fucking, intercourse, pow, riding cowgirl, <lora:Pov_Riding_in_Cowgirl:1>"
+   },
+
+   "#": "Add prompt modifications for skin color prompts. Typical skin prompts looks like \"{color}\" skin.",
+   "skin_prompt": {
+      "#": "A list of string substitutions.",
+      "#": "How substitutions are applied: ",
+      "#": "   Prompt builder generates a default prompt based on a current person, e.g. \"white skin\".",
+      "#": "   Then it takes the variable part of a prompt (in this example it's \"white\") and looks",
+      "#": "      for a full match in the relevant substitution dictionary (see below).",
+      "#": "   1. If match is found, prompt builder will substitute the variable part with the \"pos\" value of the substitution object.",
+      "#": "   2. If no match is found the default prompt will be added as is.",
+      "#": "   3. If matched value has an empty string as \"pos\" value, no positive prompt will be added. ",
+      "substitutions": {
+         "#": "Simple substitution. Is equivalent to \"white\": {\"pos\": \"fair\"}",
+         "white": "fair",
+
+         "#": "Complex substitution. Overrides positive part of a prompts and adds a negative prompt.",
+         "tan": {
+            "pos": "tanned",
+            "neg": "tanlines"
+         },
+
+         "#": "Full substitution. Instead of replacing only the variable part of a prompt, override it with the provided value.",
+         "black": {
+            "override_pos": "dark latina"
+         }
+      }
+   },
+
+   "#": "Add prompt modifications for outfits/body part prompts. Typical clothing prompt looks like \"{color} {name}\".",
+   "outfit_prompt": {
+      "#": "Custom color map that will be used to determine color's name in the generated prompt.",
+      "#": "Uses simple RGB distance to determine \"closest color\". May lead to unexpected results, such as purple-ish dress resolving to grey color in prompt.",
+      "color": {
+         "#": "{Color name}: {color hex value}",
+         "black": "#000000",
+         "blue": ["#0000ff", "#6495ed"],
+         "brown": "#a52a2a",
+         "green": "#008000",
+         "grey": "#808080",
+         "orange": "#ffa500",
+         "pink": "#ffc0cb",
+         "purple": "#800080",
+         "red": "#ff0000",
+         "violet": "#ee82ee",
+         "white": "#ffffff",
+         "yellow": "#ffff00"
+      },
+
+      "#": "This dictionary is used only for substituting a piece of clothing's name. Colors should be resolved using color dict above.",
+      "substitutions": {
+         "#": "Names are the same is in the game's wardrobe, but lowercase.",
+         "capris": "capri pants",
+
+         "daisy dukes": {
+            "pos": "denim short shorts",
+
+            "#": "If false, do not prepend clothing's color to the generated prompt.",
+            "allow_color": false
+         },
+         "evening dress": {
+            "pos": "cocktail dress",
+            "neg": "cocktail"
+         },
+         "lacy one piece bottom": ""
+      }
+   },
+
+   "#": "Add prompt modifications for hair color/style prompts. Typical hair prompt looks like \"{color} {style}\".",
+   "details_prompt": {
+      "#": "This substitution dict is used for both color and style.",
+      "substitutions": {
+         "#": "Hair color substitution",
+         "saturated": "bleached blonde",
+         "barbie blonde": "bleached blonde",
+         "strawberry blonde": "blonde",
+         "chocolate brown": "brown",
+
+         "#": "Hair style substitution",
+         "messy hair": "messy hair, long hair"
+      }
+   },
+
+   "negative_prompt": "2girls, greyscale, monochrome, cg, render, unreal engine, low quality, watermark",
+   
+   "#": "Enable img2img : tells SD to take the standard image as an input",
+   "img2img": true,
+   "denoising_strength": 0.5
+}

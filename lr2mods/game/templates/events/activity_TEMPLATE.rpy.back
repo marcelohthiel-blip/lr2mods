@@ -1,0 +1,138 @@
+# Use this template to make a new activity.
+# This is currently defaulted to making a new bar activity, but as other dates and meetings are written to use activities then it will follow a similar format
+# Please take note of where TEMPLATE is in lower case or all caps. If it is in lower case, make sure you use all lower case for your names.
+# If TEMPLATE is capitalized normally, use what you wish.
+
+init -1 python:
+    # BAR_DATE_GAME_RANDOM_MARGIN = 10          This is defined elsewhere. Used for determining how random a game is.
+    activity_names["template"] = "Template"     # This tells the menu build how to list your game
+    activity_response_list.append("template")   # Use this if you want to add personality based responses to the bar game.
+
+    #Use this function to determine of the game is successful. The first number determines initial trend, the second number determines win or lose.
+    #Generally I compare a couple skills from both MC and the girl, but any method ofr determining values here works.
+    #This example compares Focus and production skill, and gives players the advantage the more drunk the girl is.
+    def bar_date_skills_template(person):
+        skill_dif = (mc.focus + mc.production_skill + person.drink_level) - (person.focus + person.production_skill)
+        rand_roll = renpy.random.randint(-BAR_DATE_GAME_RANDOM_MARGIN, BAR_DATE_GAME_RANDOM_MARGIN)
+        return [skill_dif, (skill_dif + rand_roll)]
+
+init 1 python:
+    # The following commands makes all the default personalities like the activity. Opinion ranges from -2 to +2, like regular opinions
+    relaxed_activity_opinions["template"] = 1
+    introvert_activity_opinions["template"] = 1
+    reserved_activity_opinions["template"] = 1
+    wild_activity_opinions["template"] = 1
+    bimbo_activity_opinions["template"] = 1
+    alpha_activity_opinions["template"] = 1
+    cougar_activity_opinions["template"] = 1
+
+    #TODO
+    # $ bar_date_add_available_game("template")
+    # In order for you to use this activity, you MUST add this piece of code somewhere, elsewhere in the game.
+    # Recommendation is to add it to a custom character or to some kind of label override in your mod
+    # Just make sure it inside of a label. This is what tells the game that this activity is available for bar dates specifically.
+
+label bar_date_template_label(the_person):
+    $ mc_distraction = False            #If MC has attempted to distract the girl
+    $ date_distraction = False          #If the girl has attempt to distract MC.
+    $ game_check = bar_date_skills_template(the_person) # returns [int(advantage), int(result)]
+    $ the_person.draw_person(display_transform = character_center_focus)
+    "In this template, we perform some kind of activity now."
+    if game_check[0] >= 0:  #MC has an early advantage in the activity. Consider having the girl attempt to distract him, EG flashing, grabbing his dick, etc.
+        the_person "Wow, you are good at this..."
+        mc.name "Hells yeah."
+        if bar_date_game_distraction_check(the_person, distraction_level = 1):  #This determines if the person attempts to distract MC. See bar_date.rpy for what the distraction levels are.
+            # In this case, the girl tries to use her tits as a distraction
+            if the_person.tits_visible:
+                the_person "Hey [the_person.mc_title], check this out!"
+                $ the_person.draw_person(position = "kneeling1", display_transform = character_center_focus)
+                "[the_person.possessive_title!c] leans over and shakes her chest back and forth for a moment."
+            else:
+                the_person "Hey [the_person.mc_title], look at this!"
+                $ the_person.strip_to_tits(prefer_half_off = True)
+                $ the_person.draw_person(display_transform = character_center_focus)
+                "[the_person.possessive_title!c] flashes her tits at you, giving them a good shake before restoring her clothing."
+                $ the_person.apply_planned_outfit()
+                $ the_person.draw_person(display_transform = character_center_focus)
+            
+            $ date_distraction = True
+            $ mc.change_locked_clarity(40)
+            $ the_person.change_arousal(10)
+            $ game_check[1] += (-4)     #changing the final score changes how likely MC is of winning the game.
+            "Her distraction causes you to suck. You might actually lose now."
+    else:   #MC is losing at the activity early on.
+        the_person "Wow, you really suck at this."
+        mc.name "I stubbed my toe this morning, that is why."
+        the_person "Sounds like a skill issue."
+        menu:
+            "Try and distract her":
+                $ the_person.draw_person(position = "walking_away", display_transform = character_center_focus)
+                "[the_person.possessive_title!c] has back turned to you. Now is your chance."
+                "You step close behind her, putting your hands on her hips, then lean forward to whisper in her ear."
+                if the_person.effective_sluttiness() < 20:  #Hell nah
+                    "Before you can enact your plan, she gives you a quick elbow to the gut."
+                    $ the_person.draw_person(position = "back_peek", display_transform = character_center_flipped(zoom = 1.2))
+                    the_person "Hands off mister. Nothing can stop me from dominating this game."
+                    "Oof. Your plan appears to have backfired. You move away, and she seems even more focused than before."
+                    $ mc_distraction = False
+                    $ game_check[1] += (-3)
+                elif the_person.effective_sluttiness() > 60:    #Hell yeah
+                    mc.name "No wonder you are so good at this, your form is amazing..."
+                    "You feel her entire body shiver at your unexpected touch. You move forward, pressing your body against hers."
+                    the_person "Ahhh, good to know my form is... appreciated..."
+                    "After a few seconds, you let go and back away. She is glancing back at you, clearly distracted."
+                    $ mc_distraction = True
+                    $ mc.change_locked_clarity(40)
+                    $ the_person.change_arousal(20)
+                    $ game_check[1] += (6)
+                else:       #it kinda works
+                    mc.name "You have a great form, no wonder you are so good at darts."
+                    "She startles for a moment at your touch, but chuckles and gives you a playful elbow to get you to back away."
+                    the_person "Glad to know my form is appreciated, but stop trying to distract me!"
+                    "You back away, but she glances back at you. You were able to distract her a little bit, at least."
+                    $ mc_distraction = True
+                    $ mc.change_locked_clarity(20)
+                    $ the_person.change_arousal(5)
+                    $ game_check[1] += (2)
+            "Try to focus":
+                "You don't want to cause a scene, so you just focus on doing as well as you can."
+
+    if game_check[1] >= 0:  #mc wins
+        if mc_distraction:
+            "While she plays distracted, you manage to win."
+        else:
+            "You manage to win the game."
+        mc.name "In your face, [the_person.title]."
+        $ the_person.call_dialogue("game_template_response", mc_won = True)
+        $ the_person.increase_drink_level(1)
+        "[the_person.title] quickly finishes her drink."
+        return True
+    else:
+        if date_distraction:
+            "For a while, it seems you might win, but [the_person.possessive_title]'s flash distracted you too much and you lose."
+        else:
+            "Unfortunately, you have no chance of catching up. [the_person.possessive_title] wins the game easily."
+        $ the_person.call_dialogue("activity_template_response", mc_won = False)
+
+
+    return False
+
+
+# Similar to the above label, however, this label requires a group of girls.
+# Currently the max group size is 2, but there COULD be bigger sizes in the future, so try and code responsibly for that if you can.
+label bar_group_date_template_label(the_group):
+    "We perform template with a group."
+    return False
+
+
+# If you added template to activity_response_list above, you MUST add ATLEAST a relaxed win/loss response.
+# Any additional personality based responses are used when appropriate, EG relaxed_activity_template_response
+# The labels only have to exist somewhere, they might be moved to the appropriate personality files if needed.
+label relaxed_activity_template_response(the_person, mc_won):
+    if mc_won:
+        the_person "You're pretty good at that. Thankfully I don't mind having an extra drink!"
+        $ the_person.change_stats(obedience = 2, max_obedience = 160, happiness = 2, arousal = 10)
+    else:
+        the_person "Drink up! Maybe you'll do better next time, though I doubt it!"
+        $ the_person.change_stats(happiness = 2, arousal = 5)
+    return

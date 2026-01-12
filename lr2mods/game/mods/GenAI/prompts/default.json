@@ -1,0 +1,302 @@
+{
+	"Name": "default",
+	"Model": "waiIllustriousSDXL_v150",
+	"Description": "waifus for everyone",
+	"settings": {
+		"cgi": "7.0",
+		"resolution": "1024x1536",
+		"steps": "30",
+		"sampler": "Euler a",
+		"adetailer": "face_yolov8n.pt"
+	},
+	"positive_prompt_prefix" : "masterpiece,best quality,anime style",
+    "negative_prompt_prefix" : "bad quality,worst quality,worst detail",
+	"style_prompt": "full body portrait, plain black background, solo portrait",
+	"face_prompt": {
+		"random": {
+			"pos": "attractive",
+			"neg": ""
+		},
+		"alexia": {
+			"pos": "",
+			"neg": ""
+		},
+		"ashley": {
+			"pos": "",
+			"neg": ""
+		},
+		"camila": {
+			"pos": "aachoco, demon horns, wings, demon tail, breast tattoo, <lora:yuzuki_choco_ilxl_v1:1>",
+			"neg": ""
+		},
+		"candace": {
+			"pos": "",
+			"neg": ""
+		},
+		"christina": {
+			"pos": "",
+			"neg": ""
+		},
+		"christine": {
+			"pos": "",
+			"neg": ""
+		},
+		"ellie": {
+			"pos": "",
+			"neg": ""
+		},
+		"emily": {
+			"pos": "",
+			"neg": ""
+		},
+		"erica": {
+			"pos": "",
+			"neg": ""
+		},
+		"gabrielle": {
+			"pos": "",
+			"neg": ""
+		},
+		"iris": {
+			"pos": "",
+			"neg": ""
+		},
+		"jennifer": {
+			"pos": "ookami mio, wolf girl, wolf ears, wolf tail, wolf ears, animal ear fluff,tail wrap, tail around own leg,<lora:Ookami_Mio:1>",
+			"neg": ""
+		},
+		"kaya": {
+			"pos": "",
+			"neg": ""
+		},
+		"lily": {
+			"pos": "Murasaki Shion,<lora:lora:1>",
+			"neg": ""
+		},
+		"myrabelle": {
+			"pos": "",
+			"neg": ""
+		},
+		"naomi": {
+			"pos": "",
+			"neg": ""
+		},
+		"nora": {
+			"pos": "",
+			"neg": ""
+		},
+		"ophelia": {
+			"pos": "",
+			"neg": ""
+		},
+		"penelope": {
+			"pos": "",
+			"neg": ""
+		},
+		"rebecca": {
+			"pos": "",
+			"neg": ""
+		},
+		"sakari": {
+			"pos": "",
+			"neg": ""
+		},
+		"sarah": {
+			"pos": "luiIL,head wings,<lora:luiIL:1>",
+			"neg": ""
+		},
+		"starbuck": {
+			"pos": "",
+			"neg": ""
+		},
+		"stephanie": {
+			"pos": "hakui koyori,animal ears,animal ear fluff,tail<lora:HOLOLIVE_Hakui_Koyori_XL:1>",
+			"neg": ""
+		},
+		"dinah": {
+			"pos": "",
+			"neg": ""
+		},
+		"sylvia": {
+			"pos": "",
+			"neg": ""
+		},
+		"paige": {
+			"pos": "",
+			"neg": ""
+		},
+		"kendra": {
+			"pos": "",
+			"neg": ""
+		},
+		"svetlanna": {
+			"pos": "",
+			"neg": ""
+		},
+		"kelly": {
+			"pos": "",
+			"neg": ""
+		},
+		"Sativa": {
+			"pos": "",
+			"neg": ""
+		},
+		"Nuoyi": {
+			"pos": "",
+			"neg": ""
+		},
+		"Lynn": {
+			"pos": "",
+			"neg": ""
+		},
+		"Svenja": {
+			"pos": "",
+			"neg": ""
+		},
+		"Anna": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_1": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_2": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_3": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_4": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_5": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_6": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_7": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_8": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_9": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_10": {
+			"pos": "not used",
+			"neg": "not used in LR2R, so avoid using this one"
+		},
+		"Face_11": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_12": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_13": {
+			"pos": "",
+			"neg": ""
+		},
+		"Face_14": {
+			"pos": "",
+			"neg": ""
+		},
+		"use_story_faces_prompt": true,
+		"use_unique_faces_prompt": true,
+		"use_random_faces_prompt": true
+	},
+	"expression_prompt": {
+		"above160": "very happy",
+		"above120": "happy",
+		"above100": "smile",
+		"sad": "sad",
+		"angry": "angry"
+	},
+	"age_prompt": {
+		"above60": {
+			"pos": "grandmother",
+			"neg": "teen, child, young"
+		},
+		"above50": {
+			"pos": "middle age,milf,pudgy belly",
+			"neg": "teen, child, young"
+		},
+		"above30": {
+			"pos": "young adult,milf",
+			"neg": "teen, child, young"
+		},
+		"above20": {
+			"pos": "college age",
+			"neg": "teen, child, young"
+		},
+		"above17": {
+			"pos": "Loli,short,child",
+			"neg": ""
+		},
+		"add_explicit_age_prompt": true
+	},
+	"breasts_prompt": {
+		"AA": "flat chest",
+		"A": "small breasts",
+		"B": "small breasts",
+		"C": "medium breasts",
+		"D": "medium breasts",
+		"DD": "large breasts",
+		"DDD": "large breasts",
+		"E": "huge breasts",
+		"F": "huge breasts",
+		"FF": "massive breasts"
+	},
+	"body_type_prompt":{
+		"default": "average build",
+		"thin": "thin body,petite",
+		"curvy": "curvy body,voluptous",
+		"default_preg": "pregnant"
+	},
+	"position_prompt": {
+		"default": "(full body portrait:1.3), standing, facing viewer, striking a pose, (feet:0.2)",
+		"stand2": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), hands behind head",
+		"stand3": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), hands on hips",
+		"stand4": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), one hand on hip",
+		"stand5": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), squeezing breasts",
+		"walking_away": "(walking away:2), (back view:2), full body portrait, (feet:0.5)",
+		"kissing": "(french kiss:1.2), (kissing a man:2), hetero couple, (eyes closed|eyes shut:1.1), (dripping saliva:2), focus on face, (extreme close-up shot:0.9), <lora:french_kiss_xl_v1:0.1>",
+		"doggy": "(doggystyle sex with a naked man:1.4), (gaping anus:0.5), (creampie:0.5), on all fours, establishing shot, open mouth, <lora:DoggystyleWithFeetV3:0.8>",
+		"missionary": "missionary sex, spread legs, girl on back, hetero, couple, naked man, creampie, high angle, open mouth",
+		"blowjob": "(deepthroat blowjob|deepthroating:2), looking up, (saliva dripping:1.6), naked man, extreme close-up shot, facial, <lora:Deepthroat slider IXLR3_alpha16.0_rank32_full_last:0.8>",
+		"against_wall": "(standing sex|sex against wall|sex from behind:1.2), from above, sex with a man, couple, open mouth, <lora:standing_sex_against_wall_from_above:0>",
+		"back_peek": "(back peek|back view), body portrait, (showing ass|lifting her ass|squeezing her ass:1.1), low angle, full shot",
+		"sitting": "(sitting on a chair:1.4), spreading legs, establishing shot",
+		"kneeling1": "(kneeling:2), facing viewer, close-up, legs spread apart, high angle, feet",
+		"standing_doggy": "(standing doggystyle sex:2), nude man, standing sex from behind, (fucking:-0.5), hetero, couple, bent over, (creampie:0.5), (dripping pussy:0.5), (focus on girl:1.6), (lifting leg:0.5), (gaping anus:0.6), open mouth, <lora:Bent_over_a_table:1>",
+		"cowgirl": "(cowgirl position|riding a man|riding cowgirl:1.1), (naked man:1.2), creampie, vaginal sex, open mouth, (arched back|leaning back:0.8), (spreading pussy:0.7), (head tilted forward|eyes down:0.9), sweaty skin, sweaty face, wet hair, cum on belly, cum on thighs, sweat dripping from chin, sweat dripping from breasts, wide shot"
+	},
+	"skin_prompt": {
+    "substitutions": {
+      "white": "white",
+      "tan": "white",
+      "black": "white"
+    }
+  },
+	"outfit_prompt": {
+		"substitutions": {}
+	},
+	"details_prompt": {
+		"substitutions": {
+			"saturated": "bleached blonde"
+		}
+	},
+	"negative_prompt": "2girls, greyscale, monochrome, cg, render, unreal engine, low quality, watermark"
+}

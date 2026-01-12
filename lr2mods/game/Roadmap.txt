@@ -1,0 +1,114 @@
+### Lab Rats 2 Reformulate - Rolling 6 month roadmap.
+
+# This document is designed to give modders and other interested parties planned content creation for the game for the next 6 months.
+# Due to the nature of game development, this plan may change at anytime, and is intended to be a guideline only.
+# Dates and priority of development will likely change. Estimated patch notes are only estimates.
+
+# July 2023
+This month I'll be working on the first Reformulate content patch and prototyping. The first patch is focused on the characters Starbuck and Rebecca
+Both characters get working progress screens. Rebecca gets the first few events in her obedience storyline, and Starbuck gets some obedience and Love content.
+Sex Shop investment is getting a small overhaul. % return of investment now scales based on MC involvement, and can increase by obedience and general story advancement.
+Rebecca and Starbuck teamup scene should get prototyped, with at least the first two scenes finished.
+
+# August 2023
+Finishing up the first content patch for Reforumulate, with a beta available near the end of the month, and public release the first week of Sept.
+
+Estimated content patch notes:
+- Reorginize existing Starbuck Storyline.
+- Starbuck 120 obedience event.         100%
+- Starbuck 140 obedience event.         60%
+- Starbuck 160 obedience event.         0%
+- Starbuck 20 love event.               100%
+- Starbuck 40 love event.               0%
+- Streamlined sex shop investment opportunities     60%
+- Starbuck progress screen              100%
+- Starbuck and Rebecca teamup initialization with 2 significant scenes      15%
+- Rebecca 120 obedience event.          70%
+- Rebecca 140 obedience event.          0%
+- Rebecca 160 obedience event.          0%
+- Rebecca 20 love scene.                0%
+- New MC aura serum - Aura of Fertility     90%
+
+#September 2023
+First week of september, release content patch 1 to the public via develop merge and hopefully new master AiO release
+Begin prototyping and writing content for patch 2. Patch 2 planned to focus on Kaya and Jennifer, some of the changes are still in question.
+New pregnancy content planned. Make the first "I'm Pregnant" event split based on pregnancy preferences. Girls may get abortion, demand child support, be ecstatic, etc.
+For Jennifer, progress her slut route to at least fucking her boss, then extend hiring her events to fucking MC at work.
+Create new work role: Personal Assistant. Personal assistant still counts against employee count, and works from CEO office
+Personal Assistant has small slut route, where she helps MC with "tension", later has options where if MC has high Lust, entering the office triggers scenes
+Create new wardrobe function for Jennifer via obedience route to dress her up when she is home. Make Lily notice.
+For Kaya, consider redoing intern program. Avoid intern program like the plague. Possibly cut intern feature? Underutilized, unneccessary, takes away from the base game, high workload feature.
+Give Kaya a unique pregnancy route, as a way of introducing unique pregnancy routes for future unique girls.
+
+#October 2023
+Finish content patch 2 for basic testing by the end of the month.
+Figure out by this month what we are doing with graphic overhaul and funding. Are we making a patreon? subcribestar? If patreon begin pivoting away from incest content
+***ALL possible raised funds to be recycled into content creation
+If we are making a patreon, this needs done in October:
+
+Estimated Patch notes. *** notes changes made for a pivot to patreon guidelines if decided to go that way.
+- Jennifer 60 sluttiness event while serving as personal assistant
+- Jennifer 20, 40, 60 sluttiness events while MC employee
+- Jennifer transition to MC employment event
+- Jennifer 120, 140 obedience events and dressup rules
+- Pregnancy role expansion and additions
+- New MC Serum - Fertile Cum
+- Kaya unique pregnancy route
+- Kaya Love and Obedience arc beginnings
+- Skippable billiards mini game
+- Rebecca, Starbuck, Kaya, Jennifer breeding fetish events
+
+#November 2023
+Release content patch 2 to the public. Begin work on content patch 3.
+For sure we work on Lily for content patch 3.
+2nd character we focus for this patch will be Sarah
+Sarah unique pregnancy route
+Sarah obedience 120 and 140 events, associated taboo breaks.
+Lily 20 and 40 love events
+Lily 120 and 140 obedience events   #Details of these events can be found on the discord, vanilla merge spoilers threads
+Outline new threesome mechanics and required coding
+
+#December 2023
+Finish up content patch 3 for small scale testing at the end of the month.
+2 or 3 new threesome positions to take advantage of new threesome coding
+Prep for possible wider public release with funding test.
+Enjoy the holidays
+Lily and Sarah breeding fetish implementation
+New Date - Go for drinks. A date at the bar, with various interactions unlocked via unique girl progression (EG darts, billiards, street fighter, etc)
+
+Estimated Patch notes
+- Lily 20, 40 love events
+- Lily 120, 140 obedience events
+- Lily breeding fetish expanded
+- Sarah 120 and 140 obedience events
+- Expand Sarah breeding fetish
+- Sarah and Lily unique pregnancy routes
+- Updated Threesome Mechanics
+
+#January 2024
+Release content patch 3 in the first week. New AiO master version
+*** Launch on appropriate service(s), subscribestar?
+Begin work on content patch 4. Erica and Nora as development focus.
+Create method for MC serums to be sold as protein drinks at gym
+Create code for measuring general public corruption and obedience
+Prototype new room menu: Group mechanics.
+Group mechanics - Get two girls from a room (or nearby rooms?) and ask them to do something with you.
+Group mechanics may utilize new threesome mechanics, new group date? Group small talk? Peer pressure?
+
+# Febuary 2024
+Finishing touches on content patch 4 for small scale testing at the end of the month.
+Prototype date conversations: optional back stories for unique characters.
+Conversations can be done once each time, and give MC a chance to make a big impact on a girl's stats based on his cloices.
+
+Estimated Patch Notes:
+- Nora 20 love event
+- Nora 120, 140 obedience events
+- Nora 20, 40 sluttiness events
+- Erica 120, 140 obedience events
+- Erica and Sarah teamup reworked with more possible outcomes
+- Erica sluttiness and love stories revamped
+- Erica sponsored protein shakes for the Gym
+- Bar Date
+- Reworked dates for more outcomes, variability
+- Unique conversations with unique girls on dates.
+

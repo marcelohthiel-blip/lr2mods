@@ -1,0 +1,223 @@
+{
+	"Name": "Illustrious Itch Heavy 2506",
+	"Model": "fasercore_ponyV2FP32",
+	"ModelURL": "https://civitai.com/models/679856?modelVersionId=1048561",
+	"settings": {
+		"cgi": "5.0",
+		"resolution": "800x1200",
+		"steps": "20",
+		"sampler": "Heun",
+		"adetailer": "mediapipe_face_full"
+	},
+	"loras": [
+	   {
+		   "Name": "Dramatic Lighting Slider",
+		   "URL": "https://civitai.com/models/1128288/dramatic-lighting-slider-illustrious"
+	   }
+   ],
+	"positive_prompt_prefix": "(straight teeth:0.4), (no bra:0.2), (no panties: 0.2), (cameltoe:0.3)",
+    "negative_prompt_prefix": "",
+	"style_prompt": "nails polish, eyeshadow, lipstick, thick lips, sexy face, white sclera, (photorealistic|realistic), detailed, (plain dark background|dark wall background:1.1), specular lighting, <lora:Dramatic Lighting Slider:2>, <lora:Makeup Slider_alpha1.0_rank4_noxattn_last:1.01>, <lora:Detailed_Nails_-_Illustrious:0.8>",
+	"expression_prompt": {
+		"above160": "very happy, smiling, open mouth",
+		"above120": "(happy|smiling)",
+		"above100": "happy",
+		"sad": "sad",
+		"angry": "angry"
+	},
+	"age_prompt_pos": {
+		"above60": "(old woman:2)",
+		"above50": "(mature woman:2)",
+		"above30": "(adult woman:1.1)",
+		"above20": "young woman",
+		"above17": "young girl, (teen:0.4)"
+	},
+	"age_prompt_neg": {
+		"above60": "(young:1.9)",
+		"above50": "(young:1.5)",
+		"above30": "(young:0.9)",
+		"above20": "(teen:0.9)",
+		"above17": "child"
+	},
+	"breasts_prompt": [
+		"flat chest",
+		"tiny breasts",
+		"small breasts",
+		"medium breasts",
+		"average breasts",
+		"(large breasts:1.0)",
+		"(large breasts:1.3)",
+		"(large breasts:1.6)",
+		"(large breasts:1.9)",
+		"(large breasts:2.2)"
+	],
+	"body_type_prompt":{
+		"default": "curvy",
+		"thin": "thin",
+		"curvy": "(bbw:1.1)",
+		"default_preg": "pregnant"
+	},
+	"position_prompt": {
+		"default": "(full body portrait:1.3), standing, facing viewer, striking a pose, (feet:0.2)",
+		"stand2": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), hands behind head",
+		"stand3": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), hands on hips",
+		"stand4": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), one hand on hip",
+		"stand5": "(full body portrait:1.3), standing, facing viewer, (posing:0.9), (feet:0.2), squeezing breasts",
+		"walking_away": "(walking away:2), (back view:2), full body portrait, (feet:0.5)",
+		"kissing": "(french kiss:1.2), (kissing a man:2), hetero couple, (eyes closed|eyes shut:1.1), (dripping saliva:2), focus on face, (extreme close-up shot:0.9), <lora:french_kiss_xl_v1:0.1>",
+		"doggy": "(doggystyle sex with a naked man:1.4), (gaping anus:0.5), (creampie:0.5), on all fours, establishing shot, open mouth, <lora:DoggystyleWithFeetV3:0.8>",
+		"missionary": "missionary sex, spread legs, girl on back, hetero, couple, naked man, creampie, high angle, open mouth",
+		"blowjob": "(deepthroat blowjob|deepthroating:2), looking up, (saliva dripping:1.6), naked man, extreme close-up shot, facial, <lora:Deepthroat slider IXLR3_alpha16.0_rank32_full_last:0.8>",
+		"against_wall": "(standing sex|sex against wall|sex from behind:1.2), from above, sex with a man, couple, open mouth, <lora:standing_sex_against_wall_from_above:0>",
+		"back_peek": "(back peek|back view), body portrait, (showing ass|lifting her ass|squeezing her ass:1.1), low angle, full shot",
+		"sitting": "(sitting on a chair:1.4), spreading legs, establishing shot",
+		"kneeling1": "(kneeling:2), facing viewer, close-up, legs spread apart, high angle, feet",
+		"standing_doggy": "(standing doggystyle sex:2), nude man, standing sex from behind, (fucking:-0.5), hetero, couple, bent over, (creampie:0.5), (dripping pussy:0.5), (focus on girl:1.6), (lifting leg:0.5), (gaping anus:0.6), open mouth, <lora:Bent_over_a_table:1>",
+		"cowgirl": "(cowgirl position|riding a man|riding cowgirl:1.1), (naked man:1.2), creampie, vaginal sex, open mouth, (arched back|leaning back:0.8), (spreading pussy:0.7), (head tilted forward|eyes down:0.9), sweaty skin, sweaty face, wet hair, cum on belly, cum on thighs, sweat dripping from chin, sweat dripping from breasts, wide shot"
+	},
+	"skin_prompt": {
+		"replacements": [
+		{
+			"from": "white skin",
+			"to": "(nordic:1.2)"
+		},
+		{
+			"from": "tan skin",
+			"to": "(latina:1.2)"
+		},
+		{
+			"from": "black skin",
+			"to": "(dark latina:1.2)"
+		}
+		]
+	},
+	"outfit_prompt": {
+		"replacements": [
+		{
+			"from": "Capris",
+			"to": "capri pants"
+		},
+		{
+			"from": "Daisy Dukes",
+			"to": "denim short shorts"
+		},
+		{
+			"from": "Sandles",
+			"to": "sandals"
+		},
+		{
+			"from": "Teddy",
+			"to": "lace nightgown, (no panties:0.3)"
+		},
+		{
+			"from": "Cincher",
+			"to": "topless corset"
+		},
+		{
+			"from": "Kitty Babydoll",
+			"to": "lace babydoll, (no panties:0.3)"
+		},
+		{
+			"from": "Pinafore",
+			"to": "topless corset dress"
+		},
+		{
+			"from": "Virgin Killer",
+			"to": "Virgin Killer sweater"
+		},
+		{
+			"from": "Belted skirt",
+			"to": "pleated skirt with belt"
+		},
+		{
+			"from": "Business Vest",
+			"to": "(inner vest:1.2), (shirtless:0.5)"
+		},
+		{
+			"from": "Belted Top",
+			"to": "tied shirt"
+		},
+		{
+			"from": "Frilly Longsleeve",
+			"to": "shirt with frills"
+		},
+		{
+			"from": "Bathrobe",
+			"to": "(short open robe:1.4)"
+		},
+		{
+			"from": "Suit Jacket",
+			"to": "(short open shirtless blazer:1.2)"
+		},
+		{
+			"from": "Vest",
+			"to": "(leather vest:1.3), (topless:0.3)"
+		},
+		{
+			"from": "Coat",
+			"to": "(lab coat:1.1)"
+		},
+		{
+			"from": "Apron",
+			"to": "(apron:1.4)"
+		}
+		]
+	},
+	"details_prompt": {
+		"replacements": [
+		{
+			"from": "saturated",
+			"to": "bleached blonde"
+		},
+		{
+			"from": "barn red",
+			"to": "red"
+		},
+		{
+			"from": "strawberry blonde",
+			"to": "blonde"
+		},
+		{
+			"from": "chocolate brown",
+			"to": "brown"
+		},
+		{
+			"from": "knight red",
+			"to": "bright red"
+		},
+		{
+			"from": "pulp",
+			"to": "pink"
+		},
+		{
+			"from": "chestnut",
+			"to": "brown"
+		},
+		{
+			"from": "sky blue",
+			"to": "bright blue"
+		},
+		{
+			"from": "toasted wheat",
+			"to": "blonde"
+		},
+		{
+			"from": "X",
+			"to": "Y"
+		},
+		{
+			"from": "XX",
+			"to": "Y"
+		},
+		{
+			"from": "XXX",
+			"to": "Y"
+		},
+		{
+			"from": "XXXX",
+			"to": "Y"
+		}
+		]
+	},
+	"negative_prompt": "crooked teeth, bad teeth, 2girls, double portrait, side by side, loli, 3d render, cartoon, anime, rendered, unreal engine, skin folds, ugly, bad hands, missing digits, missing fingers, watermark, camera, phone, pole, metal stand, photo camera, video camera, cross-eyed, deformed, malformed, defect, long body, duplicated, distorted, cloned, duplicate body parts, disfigured, extra limbs, fused fingers, extra fingers, twisted, malformed hands, malformed fingers, mutated hands, conjoined, missing limbs, mutated, mutilated, artifacts, gross, broken, small head, deformed eyes, deformed face, ocean, crossdressing, (BBC:2)"
+}

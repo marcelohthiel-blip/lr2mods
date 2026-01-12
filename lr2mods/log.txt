@@ -1,0 +1,337 @@
+2026-01-12 11:17:01 UTC
+Windows-10-10.0.26200
+Ren'Py 8.3.6.25022803
+
+Early init took 0.98s
+Loading error handling took 0.46s
+Current version: 8.3.6.25022803
+Opt out version: (8, 1, 3, 0)
+OPT IN ANNOTATIONS: True
+Loading script took 26.27s
+Loading save slot metadata took 0.74s
+Loading persistent took 0.01s
+Set script version to: None (alternate path)
+Using new conversion function
+ - Init at game/major_game_classes/clothing_related/zip_manager_ren.py:19 took 0.82470 s.
+ - Init at game/mods/GenAI/SDClient_ren.py:10 took 1.25570 s.
+ - Init at 0x52-URM/classes/main.rpyc:194 took 0.49408 s.
+Running init code took 4.03s
+Loading analysis data took 0.15s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Dump and make backups took 0.00s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.26s
+Build styles took 0.00s
+Load screen analysis took 0.22s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.47s
+Save pyanalysis. took 0.11s
+Save bytecode. took 0.48s
+Running _start took 0.02s
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3440, 1440)
+swap interval: 8 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 591.59'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(3440, 1414) drawable=(3440, 1414)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(3440, 1414) drawable=(3440, 1414)
+Maximum texture size: 4096x4096
+Load action mod: Cougar Personality
+Load action mod: Alpha Personality
+Load action mod: Modify entire wardrobe
+Load action mod: Use Persuasion
+Load action mod: Run people turn
+Load action mod: Run mandatory crisis events
+Load action mod: Run random crisis events
+Load action mod: End of day run people
+Load action mod: Shopping Date Invite
+Load action mod: Baby Fever
+Load action mod: Home Movie Invite
+Load action mod: Bra Size
+Load action mod: Fuck Date Invite
+Load action mod: Dinner Date Invite
+Load action mod: Park Date Invite
+Load action mod: Advances into the next time slot
+Load action mod: Movie Date Invite
+Load action mod: Beach Date Invite
+Load action mod: Bankruptcy check (Game Over)
+Load action mod: End of day show summary
+Load action mod: Moves people to their destinations
+Load action mod: Updates Progression Scenes
+Load action mod: Market Demand
+Load action mod: Research Reminder Crisis
+Load action mod: Morning shower with company
+Load action mod: Breeding fetish desperation
+Load action mod: Watch TV {image=gui/heart/Time_Advance.png}
+Load action mod: KiNA Mod - Family static opinions.
+Load action mod: Asking mom to shower together
+Load action mod: Lust Booty Call
+Load action mod: Serum Test
+Load action mod: Workout in Gym {image=time_advance}
+Load action mod: Social Notification
+Load action mod: Exhib Fetish: Morning shower
+Load action mod: Town Walk
+Load action mod: Cum Fetish: Familia Morning shower
+Load action mod: Anal Fetish: Employee evening
+Load action mod: Vaginal Fetish: Employee
+Load action mod: Paying for baby supplies.
+Load action mod: Watch a movie
+Load action mod: Add Wardrobe from XML
+Load action mod: Schedule a haircut {image=time_advance}
+Load action mod: Ask for a Favour   {energy=-15}
+Load action mod: Surprise Interview
+Load action mod: Strip Club Story Line
+Load action mod: Employees auto gain skill
+Load action mod: Missing Bra
+Load action mod: Coffee Break 2
+Load action mod: Bedtime Sext
+Load action mod: Someone wants anal
+Load action mod: Mom and Lily pregnancy talk
+Load action mod: Asking lily to shower together
+Load action mod: Breeding Fetish: Highly fertile employee
+Load action mod: Home Improvement
+Load action mod: Ellie's use normal accent [toggle]
+Load action mod: Happy breeder
+Load action mod: Cum Fetish: Someone
+Load action mod: Remove from game
+Load action mod: Buy the company breakfast {image=gui/heart/Time_Advance.png}
+Load action mod: Buy the company lunch {image=gui/heart/Time_Advance.png}
+Load action mod: Compliment all employees
+Load action mod: Working Weekend
+Load action mod: Breeding Fetish: Familial nighttime
+Load action mod: Cum Fetish: Employee
+Load action mod: Redesign logo {image=gui/heart/Time_Advance.png}
+{color=#ff0000}{size=18}Costs: $500{/size}{/color}
+Load action mod: Mall Flirt
+Load action mod: Import Wardrobe from XML
+Load action mod: DEV: Build and export outfits
+Load action mod: Breeding Fetish: Someone
+Load action mod: Give all employees serum
+Load action mod: Needy Girlfriend.
+Load action mod: Insult all employees
+Load action mod: Uniform Designer
+Load action mod: Office Masturbation
+Load action mod: Run mandatory morning crisis events
+Load action mod: Narrative story fix
+Load action mod: Family Dinner.
+Load action mod: Rebuild Company Wardrobe
+Load action mod: Someone asks for cum
+Load action mod: Vaginal Fetish: Employee evening
+Load action mod: KiNA Mod - Pretty start.
+Load action mod: Coffee Break
+Load action mod: Vaginal Fetish: Someone
+Load action mod: Spend time in the park {image=gui/heart/Time_Advance.png}
+Load action mod: Mom NTR
+Load action mod: Employee Needs Milked
+Load action mod: Spend the night with girl
+Load action mod: Family Exclusive Harem.
+Load action mod: Exhib Fetish: Someone
+Load action mod: Pay for LASIK surgery
+{menu_red}Costs: $5000{/menu_red}
+Load action mod: Lazy Morning
+Load action mod: Breakfast with Mom
+Load action mod: Sister NTR
+Load action mod: Sister Room Search {image=gui/extra_images/energy_token.png}
+Load action mod: Cousin Room Search {image=gui/extra_images/energy_token.png}
+Load action mod: Anal Fetish: Someone
+Load action mod: Aunt Room Search {image=gui/extra_images/energy_token.png}
+Load action mod: Bedroom Search {image=gui/extra_images/energy_token.png}
+Load action mod: Invite someone to shop {image=time_advance}
+Load action mod: Production Failure
+Load action mod: Slave Needs Attention
+Load action mod: Starbuck Phone Message
+Load action mod: Test the beach {image=gui/heart/Time_Advance.png}
+Load action mod: Distract regulators {image=gui/heart/Time_Advance.png}
+Load action mod: Business Meeting
+Load action mod: Aunt Suitcase Search {image=gui/extra_images/energy_token.png}
+Load action mod: A grateful mom.
+Load action mod: Schedule a tan {image=gui/heart/Time_Advance.png}
+Load action mod: Snooping on Mom and Lily
+Load action mod: Anal Fetish: Employee
+Load action mod: Add Company Wardrobe
+Load action mod: Girlfriend Service
+Load action mod: DEV: Display Test
+Load action mod: Late for Work
+Load action mod: Follow me
+Load action mod: Build a serum
+Load action mod: Breakfast in Bed
+Load action mod: Employee asks for cum
+Load action mod: Child Support - Option
+Load action mod: Spend time on the beach {image=gui/heart/Time_Advance.png}
+Load action mod: Child Support 
+Load action mod: Lily Needs Help Studying
+Load action mod: Missing Panties
+Load action mod: Harem Threesome
+Load action mod: Autoskill Setup
+Load action mod: Schedule Gym Session {image=time_advance}
+Load action mod: Employee evening anal request
+Load action mod: Erica wakes you up
+Load action mod: Stop following me
+Load action mod: Unisex Restroom
+Load action mod: Buy a protein shake for...
+{color=#ff0000}{size=18}Costs: $10{/size}{/color}
+Load action mod: Familial nighttime breeding
+Load action mod: Highly fertile employee needs breeding
+Load action mod: Start threesome
+Load action mod: Meditation
+Load action mod: Lily a sous chef.
+Load action mod: Employee wants anal
+Load action mod: Exhib Fetish: Employee
+Load action mod: Sister Phone Message
+Load action mod: Add Uniforms from XML
+Load action mod: Office Blowjob
+Load action mod: Mall Introduction
+Load action mod: One-on-One Training
+Load action mod: Talk with Employees {image=time_advance}
+Load action mod: Breeding Fetish: High Fertile Someone
+Load action mod: Mother Daughter Blowjob
+Load action mod: Dirty Laundry
+Load action mod: Run random morning crisis events
+Load action mod: Search the attic
+shown person Koyori
+shown person Koyori
+found 15 for category piledriver
+shown person Koyori
+found 44 for category cum_in_vagina
+new image Koyori
+shown person Koyori
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Koyori33685712.png
+Image exists: False
+Prompt match: True
+new image Koyori
+new image Koyorishown person Koyori
+shown person Koyori
+shown person Koyori
+shown person Koyori
+shown person Koyori
+shown person Koyori
+shown person Koyori
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+new image Koyori
+new image KoyoriCurrentImagePath: Mods/GenAI/generated_images/Koyori34930900.png
+Image exists: False
+Prompt match: False
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Koyori34734293.png
+Image exists: False
+Prompt match: True
+shown person Koyori
+shown person Koyori
+new image {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+shown person {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+shown person Choco Sensei
+new image Choco Sensei
+CurrentImagePath: Mods/GenAI/generated_images/Camila32964811.png
+Image exists: False
+Prompt match: False
+shown person Choco Sensei
+shown person Choco Sensei
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Choco34013389.png
+Image exists: False
+Prompt match: True
+hidden person
+hidden person
+shown person Choco Sensei
+Adv time: Run people turn (0.012)
+Adv time: Run mandatory crisis events (0.006)
+shown person {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+new image {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+new image {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}shown person {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Subaru36569310.png
+Image exists: False
+Prompt match: True
+new image {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+new image {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}shown person {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Subaru34930898.png
+Image exists: False
+Prompt match: True
+shown person {color=#FF00FF}{font=fonts/boon-500.otf}Miss Carbonero{/font}{/color}
+Random crisis: Business Meeting
+Adv time: Run random crisis events (76.798)
+Adv time: Advances into the next time slot (0.003)
+Adv time: Moves people to their destinations (0.068)
+Adv time: Updates Progression Scenes (0.003)
+new image {color=#89CFF0}{font=fonts/boon-500.otf}???{/font}{/color}
+shown person {color=#89CFF0}{font=fonts/boon-500.otf}???{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Erica35258581.png
+Image exists: False
+Prompt match: True
+new image {color=#89CFF0}{font=fonts/boon-500.otf}???{/font}{/color}
+new image {color=#89CFF0}{font=fonts/boon-500.otf}???{/font}{/color}shown person {color=#89CFF0}{font=fonts/boon-500.otf}???{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Erica34799827.png
+Image exists: False
+Prompt match: True
+shown person {color=#89CFF0}{font=fonts/boon-500.otf}???{/font}{/color}
+new image {color=#89CFF0}{font=fonts/boon-500.otf}Erica{/font}{/color}
+new image {color=#89CFF0}{font=fonts/boon-500.otf}Erica{/font}{/color}shown person {color=#89CFF0}{font=fonts/boon-500.otf}Erica{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Erica35717338.png
+Image exists: False
+Prompt match: True
+shown person {color=#89CFF0}{font=fonts/boon-500.otf}Erica{/font}{/color}
+Adv time: Run people turn (0.006)
+Adv time: Run mandatory crisis events (0.005)
+Random crisis: Friend Sends Text Crisis
+Adv time: Run random crisis events (16.424)
+Adv time: Advances into the next time slot (0.003)
+Adv time: Bankruptcy check (Game Over) (0.004)
+Adv time: Moves people to their destinations (1.643)
+Adv time: Updates Progression Scenes (0.003)
+new image {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+shown person {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Shion34865364.png
+Image exists: False
+Prompt match: True
+new image {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+shown person {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+shown person {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Shion34406611.png
+Image exists: False
+Prompt match: True
+shown person {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+shown person {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+new image {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+new image {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}shown person {color=#FFB1F8}{font=fonts/boon-500.otf}Sis{/font}{/color}
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+Adv time: Run people turn (0.005)
+Adv time: Run mandatory crisis events (0.005)
+Adv time: End of day run people (0.143)
+Adv time: Advances into the next time slot (0.004)
+Adv time: End of day show summary (4.552)
+Adv time: Moves people to their destinations (0.058)
+Adv time: Updates Progression Scenes (0.004)
+Adv time: Run mandatory morning crisis events (0.005)
+shown person {color=#8fff66}{font=fonts/boon-500.otf}Mom{/font}{/color}
+new image {color=#8fff66}{font=fonts/boon-500.otf}Mom{/font}{/color}
+new image {color=#8fff66}{font=fonts/boon-500.otf}Mom{/font}{/color}CurrentImagePath: Mods/GenAI/generated_images/Mio35979484.png
+Image exists: False
+Prompt match: False
+Folder 'game/Mods/GenAI/generated_images' created successfully.
+CurrentImagePath: Mods/GenAI/generated_images/Mio36372696.png
+Image exists: False
+Prompt match: True

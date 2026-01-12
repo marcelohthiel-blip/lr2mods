@@ -1,0 +1,193 @@
+#Last Updated January 18, 2025
+
+# This template can be copy pasted to create a custom date event.
+# Starbuck will try to include as many possible code examples to reduce the amount that modders need to go looking for new stuff.
+# An example of building this will hopefully included in the base game soon.
+# For a date, we need a minimum of three labels.
+# 1 - Asking someone in person
+# 2 - Asking someone on the phone
+# 3 - The date itself
+
+# Labels 1 and 2 get converted to Actions and then added to their respective roles or general date lists
+# Label 3 gets called through the scheduling system.
+
+init -1 python:
+    TEMPLATE_date_time_slot = 1     #Target time_of_day. Acceptable values are 0-4.
+
+    #Requirement functions determine when you can ask for the date.
+    #If you want rejection to be part of the asking, make this loose, otherwise make the minimum requirements
+    def TEMPLATE_date_plan_requirement(person):
+        love_requirement = 15
+        if person == cousin:    #If there is a unique person you want to set a condition for.
+            love_requirement = 40
+        if not mc.has_open_time_slot(time_slot = 1):  #Make sure the schedule has a possible time slot available
+            return "Your mornings are fully booked!"
+        if person.love < love_requirement:  #Other generic requirements
+            return f"Requires: {love_requirement} Love"
+        if person.sluttiness < 30:      #I wrote a brief skinny dipping scene, so it should probably require SOME sort of sluttiness.
+            return "Requires: 30 Sluttiness"
+        return True
+
+    #This should be relatively similar to the above
+    def TEMPLATE_date_text_plan_requirement(person):
+        love_requirement = 15
+        if person == mom:    #If there is a unique person you want to set a condition for.
+            return person.name + " is too old to work a phone right!"
+        if not mc.has_open_time_slot(time_slot = 1):  #Make sure the schedule has a possible time slot available
+            return "Your mornings are fully booked!"
+        if person.love < love_requirement:  #Other generic requirements
+            return f"Requires: {love_requirement} Love"
+        if person.sluttiness < 30:
+            return "Requires: 30 Sluttiness"
+        return True
+
+init 2 python:
+    TEMPLATE_date_action = Action("Ask her out for something???", TEMPLATE_date_plan_requirement, "TEMPLATE_date_plan_label",
+        menu_tooltip = "Plan a casual date at the place. Who knows what could happen.")
+    TEMPLATE_phone_date_action = Action("Ask her out for something???", TEMPLATE_date_text_plan_requirement, "TEMPLATE_date_text_plan_label",
+        menu_tooltip = "Plan a casual date at the place. Who knows what could happen.")
+
+    list_of_additional_dates.append(TEMPLATE_date_action)
+    list_of_additional_phone_dates.append(TEMPLATE_phone_date_action)
+
+    def create_TEMPLATE_date_action(person: Person, time_slot: list):
+        mc.create_date("TEMPLATE_date_label", f"date description with {person.name}", time_slot = time_slot, person = person)
+        return
+
+label TEMPLATE_date_plan_label(the_person):
+    mc.name "Hey [the_person.title], I was thinking about doing something a little bit crazy."
+    the_person "Oh yeah?"
+    mc.name "Yeah! I was thinking about skinny dipping in the fountain downtown!"
+    if mc.business.nudity_is_legal:
+        the_person "Oh geeze, that's crazy!"
+    else:
+        the_person "Skinny dipping? Isn't that ILLEGAL?"
+        mc.name "Sure, but it is all about the timing."
+        mc.name "There is a certain time in the morning when the police are in the middle of a shift change where can get away with small stuff like that."
+        "She seems skeptical, but goes along with it for now."
+    mc.name "Anyway, want to come with me? We could make it a date!"
+    the_person "I guess... when were you thinking?"
+    # This screen calls up the scheduler for players to determine which day and time they want this to take place. We restrict the time slot
+    call date_schedule_selection(the_person, TEMPLATE_date_time_slot) from _date_schedule_TIME_TEMPLATE_in_person_01
+    if _return: #We get a _return if players made a selection
+        $ create_TEMPLATE_date_action(the_person, _return)
+        the_person "Oh my god, I'm kind of scared, but so excited! Let's do it!"
+    else:       #We don't get a return if they didn't, so we back out of making the date.
+        mc.name "I'll have to get back to you, my schedule is actually kind of full."
+        the_person "Alright, just let me know!"
+    return
+
+#Phone requests are very similar to in person, but we don't draw or use similar commands.
+#For phone dates, the phone is already in use, so we don't have to initialize it.
+#using the_person or mc.name will be those people texting, accordingly.
+label TEMPLATE_date_text_plan_label(the_person):
+    mc.name "Hey [the_person.title], I was thinking about doing something a little bit crazy."
+    the_person "Oh yeah?"
+    mc.name "Yeah! I was thinking about skinny dipping in the fountain downtown!"
+    if mc.business.nudity_is_legal:
+        the_person "Oh geeze, that's crazy!"
+    else:
+        the_person "Skinny dipping? Isn't that ILLEGAL?"
+        mc.name "Sure, but it is all about the timing."
+        mc.name "There is a certain time in the morning when the police are in the middle of a shift change where can get away with small stuff like that."
+        "There is a long pause in the text message. You wait for a while, but after no response, you keep texting her."
+    mc.name "Anyway, want to come with me? We could make it a date!"
+    the_person "I guess... when were you thinking?"
+    # This screen calls up the scheduler for players to determine which day and time they want this to take place. We restrict the time slot
+    call date_schedule_selection(the_person, TEMPLATE_date_time_slot) from _date_schedule_TIME_TEMPLATE_on_phone_01
+    if _return: #We get a _return if players made a selection
+        $ create_TEMPLATE_date_action(the_person, _return)
+        the_person "Oh my god, I'm kind of scared, but so excited! Let's do it!"
+    else:       #We don't get a return if they didn't, so we back out of making the date.
+        mc.name "I'll have to get back to you, my schedule is actually kind of full."
+        the_person "Alright, just let me know!"
+    return
+
+label TEMPLATE_date_label(the_person):
+    "You head downtown to meet [the_person.possessive_title] for your planned risque meetup."
+    python: #Python blocks like this are useful if you have multiple python commands in a row instead of using $ at the start of each command
+
+        mc.stats.change_tracked_stat("Girl", "Dates", 1)
+        mc.change_location(downtown)                                #You'll want to change location for the date in almost all circumstances
+        the_person.change_location(downtown)
+
+        scene_manager = Scene()
+        scene_manager.add_actor(the_person)
+    "When you get there, you see her standing near the fountain, waiting for you."
+    "You walk up to her."
+    mc.name "Hey there, [the_person.title]."
+    the_person "Hey [the_person.mc_title]. Feeling skinny?"
+    mc.name "You know it."
+
+    #I wrote a brief scene with only a couple progression points.
+    # The first is if nudity is even legal or not. If it is illegal, players skinny dip quickly and get out
+    # If it is legal, it gives players and their dates a bit more time to screw around. If public sex is legal, maybe even put on a show for people walking by?
+    if mc.business.nudity_is_legal:
+        mc.name "You ready to do this?"
+        the_person "I guess, let's go!"
+    else:
+        "You look around the area until you spot one of the local police officers."
+        $ scene_manager.add_actor(police_chief, display_transform = character_left(zoom = 0.8))
+        "You make small talk with [the_person.title] while you wait."
+        $ scene_manager.update_actor(police_chief, display_transform = character_left(zoom = 0.8), position = "walking_away")
+        "Near the top of the hour, you watch the officer turn and walk away, her shift finished."
+        $ scene_manager.remove_actor(police_chief)
+        mc.name "Now's the time, let's go!!!"
+    "You and [the_person.possessive_title] quickly strip down. People around you are a bit surprised."
+    $ scene_manager.strip_full_outfit(person = the_person, strip_feet = True)
+    $ mc.change_locked_clarity(30)
+    the_person "Woo! Let's go!"
+    $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = "walking_away")
+    "She turns and runs toward the fountain and you quickly chase after her."
+    "[the_person.title] jumps into the base of the fountain and quickly turns over on her back. You follow her in."
+    $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = "missionary")
+    "You and [the_person.title] noisily splash around the fountain for a bit."
+    "Some passerbys cheer you on, and [the_person.possessive_title] gets a few cat calls."
+    $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = "sitting")
+    if mc.business.nudity_is_legal:
+        the_person "Woo! That was fun, but this is cold! I'm going to grab my towel..."
+        $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = "standing_doggy")
+        $ mc.change_locked_clarity(50)
+        "[the_person.possessive_title!c] bends over the edge of the fountain, reaching down to rummage through her backpack."
+        "For the first time this entire date, you find yourself dwelling for an extended period of time looking at [the_person.title]'s body..."
+        "Her perfect ass is pointed right back at you and wiggles back and forth a bit as she looks struggles to get a towel from her bag..."
+        "Eventually, she gets it out and wraps herself up, then turns back to you."
+        $ apply_towel_outfit(the_person)
+        $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = the_person.idle_pose)
+        the_person "Here, I have an extra that you can... JESUS CHRIST!"
+        the_person "Warn me if you're gonna point that gun at me like that... it might give a girl the wrong idea!"
+        "She gestures at your crotch. You look down and realize you let yourself get hard, checking out her ass."
+        mc.name "Sorry, when you bent over to get your towel from your bag, I couldn't help but appreciate your assets."
+        the_person "Aww, you're making be blush..."
+        "She throws you a towel."
+        the_person "Here. Sorry but it is way too cold to do anything about that out here anyway."
+        "You and [the_person.title] step out of the fountain and dry off with your towels."
+        "Once dried off, you both get dressed again."
+        $ the_person.apply_planned_outfit(scene_manager = scene_manager) #We apply her planned outfit
+        $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = the_person.idle_pose)
+        the_person "Yeah, that was such a rush! I'm gonna go home and warm up. See you?"
+        $ the_person.change_stats(happiness = 5, love = 3, max_love = 60)
+        mc.name "See ya!"
+        $ scene_manager.clear_scene()
+        "You walk away from the central fountain, parting ways with [the_person.title]."
+        "What a fun date!"
+    else:
+        "You and [the_person.title] pull yourself to edge of the fountain and sit on it for a quick moment."
+        the_person "That was fun! But we better get out of here when the police get done with their shift change."
+        $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = the_person.idle_pose)
+        "You step out of the fountain, quickly putting your clothes back on."
+        "They are wet, but they do the job."
+        $ the_person.apply_planned_outfit(scene_manager = scene_manager) #We apply her planned outfit
+        $ scene_manager.update_actor(the_person, display_transform = character_center_focus, position = the_person.idle_pose)
+        "Just after you finish getting dressed, you look over [the_person.title]'s shoulder..."
+        $ scene_manager.add_actor(police_chief, display_transform = character_left(zoom = 0.8))
+        mc.name "Nice, just in time."
+        "She follows your gaze and sees the police officer. She turns back to you and shoots you a sly wink."
+        the_person "Yeah, that was such a rush! I'm gonna go home and dry off. See you?"
+        $ the_person.change_stats(happiness = 5, love = 3, max_love = 50)
+        mc.name "See ya!"
+        $ scene_manager.clear_scene()
+        "You walk away from the central fountain, parting ways with [the_person.title]."
+        "What a fun date!"
+
+    return

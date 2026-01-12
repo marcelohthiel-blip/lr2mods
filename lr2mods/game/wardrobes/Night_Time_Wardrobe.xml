@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Wardrobe name="Night Time Wardrobe">
+    <FullSets>
+    </FullSets>
+    <UnderwearSets>
+		<Outfit name="Bralette and Shorts">
+			<UpperBody>
+				<Item name="Bralette" red="1.00000" green="1.00000" blue="1.00000" alpha="1.00000"/>
+			</UpperBody>
+			<LowerBody>
+				<Item name="Boy_Shorts" red="1.00000" green="1.00000" blue="1.00000" alpha="1.00000"/>
+			</LowerBody>
+			<Feet/>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="Lace Bra Thong and Thigh Highs">
+			<UpperBody>
+				<Item name="Lace_Bra" red="0.95000" green="0.95000" blue="0.95000" alpha="0.95000" pattern="Pattern_1" pred="0.21200" pgreen="0.27100" pblue="0.31000" palpha="0.95000"/>
+			</UpperBody>
+			<LowerBody>
+				<Item name="Thong" red="0.95000" green="0.95000" blue="0.95000" alpha="0.95000" pattern="Pattern_1" pred="0.21200" pgreen="0.27100" pblue="0.31000" palpha="0.95000"/>
+			</LowerBody>
+			<Feet>
+				<Item name="Thigh_Highs" red="0.95000" green="0.95000" blue="0.95000" alpha="0.95000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="G-String with Thigh Highs">
+			<UpperBody/>
+			<LowerBody>
+				<Item name="Tiny_G_String" red="0.95000" green="0.95000" blue="0.95000" alpha="0.95000"/>
+			</LowerBody>
+			<Feet>
+				<Item name="Thigh_Highs" red="0.95000" green="0.95000" blue="0.95000" alpha="0.95000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="Only Garter and Fishnets">
+			<UpperBody/>
+			<LowerBody/>
+			<Feet>
+				<Item name="Garter_and_Fishnets" red="0.95000" green="0.95000" blue="0.95000" alpha="0.95000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+    </UnderwearSets>
+    <OverwearSets>
+		<Outfit name="Robe with Sandals">
+			<UpperBody>
+				<Item name="Bath_Robe" red="0.90600" green="0.33000" blue="0.50200" alpha="0.95000" pattern="Pattern_1" pred="1.00000" pgreen="1.00000" pblue="1.00000" palpha="1.00000"/>
+			</UpperBody>
+			<LowerBody/>
+			<Feet>
+				<Item name="Sandal_Heels" red="1.00000" green="1.00000" blue="1.00000" alpha="1.00000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="Robe with Pumps">
+			<UpperBody>
+				<Item name="Bath_Robe" red="0.90600" green="0.33000" blue="0.50200" alpha="0.95000" pattern="Pattern_1" pred="1.00000" pgreen="1.00000" pblue="1.00000" palpha="1.00000"/>
+			</UpperBody>
+			<LowerBody/>
+			<Feet>
+				<Item name="Pumps" red="1.00000" green="1.00000" blue="1.00000" alpha="1.00000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="Robe with High Heels">
+			<UpperBody>
+				<Item name="Bath_Robe" red="0.90600" green="0.33000" blue="0.50200" alpha="0.95000" pattern="Pattern_1" pred="1.00000" pgreen="1.00000" pblue="1.00000" palpha="1.00000"/>
+			</UpperBody>
+			<LowerBody/>
+			<Feet>
+				<Item name="High_Heels" red="1.00000" green="1.00000" blue="1.00000" alpha="1.00000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="Nightgown with Heels">
+			<UpperBody>
+				<Item name="Nightgown" red="1.00000" green="1.00000" blue="1.00000" alpha="0.90000"/>
+			</UpperBody>
+			<LowerBody/>
+			<Feet>
+				<Item name="Sandal_Heels" red="1.00000" green="1.00000" blue="1.00000" alpha="0.90000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="Kitty Babydoll with Shorts">
+			<UpperBody>
+				<Item name="Kitty_Babydoll" red="1.00000" green="1.00000" blue="1.00000" alpha="0.90000"/>
+			</UpperBody>
+			<LowerBody>
+				<Item name="Booty_Shorts" red="1.00000" green="1.00000" blue="1.00000" alpha="0.90000"/>
+			</LowerBody>
+			<Feet>
+				<Item name="Slips" red="1.00000" green="1.00000" blue="1.00000" alpha="0.90000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+		<Outfit name="Teddy with Microskirt">
+			<UpperBody>
+				<Item name="Teddy" red="1.00000" green="1.00000" blue="1.00000" alpha="0.80000"/>
+			</UpperBody>
+			<LowerBody>
+				<Item name="Micro_Skirt" red="1.00000" green="1.00000" blue="1.00000" alpha="0.90000" pattern="Pattern_1" pred="0.21200" pgreen="0.27100" pblue="0.31000" palpha="0.95000"/>
+			</LowerBody>
+			<Feet>
+				<Item name="High_Heels" red="1.00000" green="1.00000" blue="1.00000" alpha="0.90000"/>
+			</Feet>
+			<Accessories/>
+		</Outfit>
+    </OverwearSets>
+</Wardrobe>

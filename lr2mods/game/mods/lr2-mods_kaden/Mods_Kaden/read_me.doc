@@ -1,0 +1,73 @@
+April 16, 2025 (21060 lines)
+Person Actions(1085):
+    Auto Research(191): Mandatory event (day 6+) if MC working and no research active. Adds toggle to Head Researcher to pick new research. Head researcher will notify MC each time they pick, or if they can't pick something.
+    Generic Student Role Enhanced(188): Allows internships to be offered to generic students once unlocked in Kaya's story.
+    Hypno Lactation(273): Trance training option with a short training scene where MC triggers lactation. Allows future lactation triggering and changing of trigger word/phrase.
+    Role Hypno Orgasm Enhanced(68): Allows changing of trigger word/phrase.
+    Social Notifications(365): Gives ability to scroll through all new Insta/Dik/OF on phone. Crisis event when posts accumulate. Abilty to renew all OF subscriptions.
+
+Crisis Events(2761):
+    Baby Fever(411): Random people will notice somenone is pregnant and possibly want a baby too.
+    Bra Size Crisis(246): An employee needs help since her bras don't fit anymore.
+    Date Invite(468): Girls in the appropriate love range will ask you on a movie/dinner/shopping/fuck date if you don't have one scheduled.
+    Missing Bra(161): A house mate notices her bra missing and asks if you saw it.
+    Missing Panties(148): A house mate notices her panties missing and asks if you saw them. 
+    Side Effect Crisis(228): An employee experiences serum side effects and asks for help.
+    Surprise Interview(526): Random girl pretends to have a job interview, will be extra desperate for a job.
+    Uniform Designer(563): Employee asks to design uniforms for the girls. Grils wear forced uniforms next week. Review uniforms and watch girls strip. Add uniforms to company wardrobe if desired. Can repeat weekly.
+
+People(512):
+    College Girls(352): Generates 3 partially random college girls and introduces them with Lily on campus. (Used in Study Buddy event chain.)
+    Katie(160): Max stat stripper built by request, her cousin Soni, and an intro to Paige.
+
+Recordings(2341):
+    Best Friend Recordings(825): Recordings of Lily and Study Buddy to progress story, some lesbianism.
+    Morning(844): Watch girls wake up in the morning, remove pajamas, dress for the day.
+    Shower(672): Watch girls enter bathroom, undress, shower, masturbate.
+    Sleeping(0): Not implemented
+
+Room Actions(5323):
+    Beach(1416): LR1 scenes formatted for LR2. Visit the beach, swimsuit builder, go on one of 5 potential dates at the beach, sex scenes scale with sluttiness and taboo breaks.
+    Bedroom Masturbation(419): Enhanced bedroom action with control over how often someone may walk in and ability to use stolen underwear.
+    Bedroom Search(432): Expanded bedroom search to all people in game. More impactful underwear theft.
+    Electronics Action(527): Mall event with 11K cash on hand. Allows purcahse of home cameras, and additional cameras for random people. Enables access to Recordings that scale as person sluttiness increases and bedroom playback.
+    Gym Action(177): Buy anyone in gym a protien shake and dose with serum.
+    Lobby Actions(290): Compliment/Insult all employees for effiency drop. Buy breakfast/lunch for the company. Dose entire company with same serum.
+    Mansion Action(58): Start a threesome with your harem.
+    Marketing Action(83): Decrease attention with a logo redesign or distraction.
+    Movie Night(1425): LR1 scene formatted for LR2 (poorly implemented). Dose Jennifer and/or Lily and see how far they will let you go.
+    Recolor Company Wardrobe(27): Clear and recreate default company wardrobe.
+    Tan Bed(204): Change tan styles in the hair salon, watch girls strip to get in the tan bed.
+    Time Capsule(265): Find a time capsule in the attic where you can store a serum for future new games. May struggle with some serum traits from quests/story.
+
+Serum Traits(638):
+    Breeding Serum(38): Increase fertility and sometimes lactation.
+    Detox Serum(37): Increase serum tolerance and shorten durations.
+    Expanded Personality Serum(58): Instantly apply a personality from core or mods.
+    Impotence Serum(181): Cause girls significant other to fail to perform. Increase odds of relationship ending.
+    Nocturnal Emission Actuator(40): Extreme arousal over night.
+    Personality Blueprint(98): Pick a personality to force on girl.
+    Pubes Blueprint(88): Pick a pube style to force on girl.
+    Side Effect Into Traits(19): Turn all side effects into potential traits. disabled by default, check mod settings to enable.
+    Skin Blueprint(47): Pick a skin color to force on girl.
+    Slavery Serum(32): Increase obedience, decrease love.
+
+Shared Functions(1095):
+    Display Test(154): Rough function to experiment with character positioning.
+    Pajamas(128): Girls design and wear casually revealing pajamas that scale with sluttiness.
+    Serum Builder(475): Marketing action to build a serum for a contract. Plus crisis if you have nothing good to sell.
+    Shared Functions(338): Random tools used in multiple files.
+
+Study Buddy(7305):
+    Best Friend(78): Pointer for picking current label.
+    BF 1 Friend(829): MC flirts with buddy and can date her.
+    BF 2 Transition(670): Buddy breaks up with MC, Lily comforts us. 
+    BF 3 Discussion(653): Buddy wants to date Lily and asks MC for help.
+    BF 4 Corruption(470): Buddy and Lily date and corrupt each other and keep MC updated. (see recordings)
+    BF 5 Date(1554): Buddy/Lily need help satisfying their girlfriend and ask MC to teach them.
+    BF 6 Threesome(955): Buddy and Lily thank MC for the lessons.
+    Cuddle Fingering(218): Position used in Best Friend.
+    Lesbian Sex(350): Stat changes for offscreen sex between two girls.
+    Nemisis(139): Rival/Lily establish sub/dom relationship with titles.
+    Rival(826): MC commands rival and enslaves her. Lily and rival fights and come to MC for help.
+    Study Buddy(563): Wrapper for study sessions in LIly's room on Mondays. Determines relationship and pushes towards the correct path. Allows changing of Buddy with Nora.

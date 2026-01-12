@@ -1,0 +1,144 @@
+{
+	"Name": "maswoo_light_dreamshaper",
+	"Model": "dreamshaperXL_v21TurboDPMSDE",
+	"ModelURL": "https://civitai.com/models/112902?modelVersionId=351306",
+	"Description": "My original model suggestion for the mod. It does very realistic characters but does not do positions very well. So characters will always be standing when using this profile and act as a reference for their appearance and clothes, not what they are doing.",
+	"settings": {
+		"cgi": "2.0",
+		"resolution": "1024x1024",
+		"steps": "4",
+		"sampler": "DPM++ SDE Karras",
+		"adetailer": ""
+	},
+	"positive_prompt_prefix" : "",
+    "negative_prompt_prefix" : "",
+	"style_prompt": "portrait, 1girl, d780 80mm lens, photorealistic, black background",
+	"expression_prompt": {
+		"above160": "very happy",
+		"above120": "happy",
+		"above100": "smile",
+		"sad": "sad",
+		"angry": "angry"
+	},
+	"eye_prompt": {
+		"dark blue": "dark blue eyes",
+		"light blue": "light blue eyes",
+		"brown": "warm brown eyes",
+		"piercing blue": "piercing blue eyes",
+		"grey": "grey eyes",
+		"green": "green eyes",
+		"emerald": "emerald green eyes",
+		"steel blue": "steel blue eyes",
+		"dark brown": "dark brown eyes",
+		"sparkling green": "sparkling green eyes",
+		"neutral-toned": "realistic eyes",
+		"default": "realistic eyes"
+	},
+	"age_prompt": {
+		"above60": {
+			"pos": "grandmother",
+			"neg": "teen, child, young"
+		},
+		"above50": {
+			"pos": "middle age",
+			"neg": "teen, child, young"
+		},
+		"above30": {
+			"pos": "young adult",
+			"neg": "teen, child, young"
+		},
+		"above20": {
+			"pos": "college age",
+			"neg": "teen, child, young"
+		},
+		"above17": {
+			"pos": "teen",
+			"neg": "child"
+		},
+		"add_explicit_age_prompt": true
+	},
+	"breasts_prompt": {
+		"AA": "flat chest",
+		"A": "small breasts",
+		"B": "small breasts",
+		"C": "medium breasts",
+		"D": "medium breasts",
+		"DD": "large breasts",
+		"DDD": "large breasts",
+		"E": "huge breasts",
+		"F": "huge breasts",
+		"FF": "huge breasts"
+	},
+	"body_type_prompt":{
+		"default": "standard body",
+		"thin": "thin body",
+		"curvy": "curvy body",
+		"default_preg": "pregnant"
+	},
+	"position_prompt": {
+		"default": "standing",
+		"stand2": "standing",
+		"stand3": "standing",
+		"stand4": "standing",
+		"stand5": "standing",
+		"walking_away": "standing",
+		"kissing": "standing",
+		"doggy": "standing",
+		"missionary": "standing",
+		"blowjob": "standing",
+		"against_wall": "standing",
+		"back_peek": "standing",
+		"sitting": "standing",
+		"kneeling1": "standing",
+		"standing_doggy": "standing",
+		"cowgirl": "standing"
+	},
+	"skin_prompt": {
+		"ethnicities": {
+			"white": [
+				"(american:1.4)",
+				"(british:1.4)",
+				"(canadian:1.4)",
+				"(danish:1.4)",
+				"(finnish:1.4)",
+				"(swedish:1.4)",
+				"(dutch:1.4)",
+				"(french:1.4)",
+				"(russian:1.4)",
+				"(german:1.4)",
+				"(irish:1.4)",
+				"(Scottish:1.4)"
+			],
+			"tan": [
+				"(korean:1.4)",
+				"(japanese:1.4)",
+				"(chinese:1.4)",
+				"(thai:1.4)",
+				"(colombian:1.4)",
+				"(argentinian:1.4)",
+				"(mexican:1.4)",
+				"(cuban:1.4)"
+			],	
+			"black": [
+				"(african:1.4) skin",
+				"(african american:1.4)",
+				"(nigerian:1.4)",
+				"(ethiopian:1.4)"
+			]
+		}
+  	},
+	"outfit_prompt": {
+		"substitutions": {
+			"nipples": {
+				"pos": "(naked breasts:1.2), (nipples:2), (topless:2)",
+				"neg": "bra, shirt, top" }
+			}
+	},
+	
+	"details_prompt": {
+		"substitutions": {
+			"saturated": "bleached blonde"
+		}
+	},
+	"negative_prompt": "2girls, greyscale, monochrome, cg, render, unreal engine, low quality, watermark"
+}

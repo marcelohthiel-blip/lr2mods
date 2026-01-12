@@ -1,0 +1,257 @@
+{
+  "Name": "Itch Fasercore Light 290625",
+  "Model": "fasercore_ponyV2FP32",
+  "ModelURL": "https://civitai.com/models/679856?modelVersionId=1048561",
+  "settings": {
+    "cgi": "5",
+    "resolution": "800x1200",
+    "steps": "12",
+    "sampler": "Heun",
+    "scheduler": "Karras",
+    "adetailer": "mediapipe_face_full"
+  },
+  "positive_prompt_prefix" : "bright fluorescent lights:1.4), HDR, vibrant colors, (full|thick) lips, (naked:0.2), (topless:0.2), ",
+  "negative_prompt_prefix" : "(panties:0.1), (bra:0.1), (pants:0.1), (shorts:0.1), (shirt:0.1)",
+  "style_prompt": "(photorealistic|realistic), ((straight|perfect) teeth:0.99), (very beautiful|sexy) face, detailed face, eyeshadow, BREAK, (deep black background:1.2), (luminiscent particles in the foreground:1.4), ((tall volumetric fog:1.4) in background:1.6), black (concrete|marble) floor, reflective floor, (subsurface scattering:1.1), bright volumetric lighting, golden hour, glowy translucency, soft diffused lighting, bright diagonal crepuscular rays, bokeh, taken with Canon EOS R5, 75mm lens",
+
+  "negative_prompt": "loli, skin folds, stretchmarks, ugly, gross, ((crooked|bad) teeth:0.99), 2girl, 3girl, duplicated, cloned, side-by-side, cartoon, anime, 3D render, (metal (pole|stand):1), phone, artifacts, watermark, cross-eyed, deformed, malformed, defect, distorted, disfigured, twisted, ((duplicate|extra|malformed|deformed|mutilated|missing|conjoined|fused|broken) (body parts|limbs|fingers|feet|face):1), small head, long body, (BBC:2), door, window, outdoors, ocean, beach, forest, nature, sky, (street:1.6), (dog|wolf|animal)",
+
+  "expression_prompt": {
+    "above160": "very happy",
+    "above120": "smiling",
+    "above100": "slight smirk",
+    "sad": "serious",
+    "angry": "upset"
+  },
+
+  "age_prompt": {
+    "above60": {"pos": "(old woman:1.2)"},
+    "above50": {"pos": "(mature woman:2)"},
+    "above30": {"pos": "(adult woman:1.1)"},
+    "above20": {"pos": "young woman"},
+    "above17": {"pos": "young girl, barely legal"},
+    "add_explicit_age_prompt": true
+  },
+
+  "breasts_prompt": {
+    "AA": "flat chest",
+    "A": "tiny breasts",
+    "B": "small breasts",
+    "C": "medium breasts",
+    "D": "average breasts",
+    "DD": "(large breasts:1.0)",
+    "DDD": "(large breasts:1.3)",
+    "E": "(large breasts:1.6)",
+    "F": "(huge breasts:1.0)",
+    "FF": "(huge breasts:1.2)"
+  },
+
+  "body_type_prompt":{
+    "thin": "(lean|feminine|thin) body",
+    "default": "curvy body",
+    "curvy": "bbw",
+    "default_preg": "pregnant"
+  },
+
+  "position_prompt": {
+    "default": {
+      "pos": "(full body portrait:1.3), standing, (feet:1), striking a pose, ((elevated|high) angle:1.1)"
+    },
+    "stand2": {
+      "pos": "(full body portrait:1.3), standing, (feet:1), striking a pose, hand on face, ((elevated|high) angle:1.1)"
+    },
+    "stand3": {
+      "pos": "(full body portrait:1.3), standing, (feet:1), striking a pose, lifting one leg, leg bent at the knee, ((elevated|high) angle:1.1)"
+    },
+    "stand4": {
+      "pos": "(full body portrait:1.3), standing, (feet:1), (dynamic|dramatic) pose, ((elevated|high) angle:1.1)"
+    },
+    "stand5": {
+      "pos": "(full body portrait:1.3), standing, (feet:1), pinup pose, ((elevated|high) angle:1.2)"
+    },
+    "walking_away": {
+      "pos": "(walking away:1.2), (back view:1.1), (feet:1), presenting ass, ((elevated|high) angle:1.1)",
+      "face_visible": false,
+      "breasts_visible": false
+    },
+    "kissing": {
+      "pos": "((french kiss|kissing):1.2), (standing:0.7), hetero couple, white (man|male|guy|dude:1.2), (dripping saliva:1.1), (eyes (closed|shut):1.1), focus on face, (close-up:1.1)",
+      "neg": "blowjob, sucking dick, fellatio, lesbian",
+      "feet_visible": true
+    },
+    "doggy": {
+      "pos": "(doggystyle (sex:2) with a (naked (male|boy|man|guy)):1.4), naked (male|boy|man|guy), (gaping anus:0.6), (creampie:0.5), on all fours, open mouth",
+      "face_visible": true
+    },
+    "missionary": {
+      "pos": "(sex in missionary position:1.2), fucking, (legs spread:0.6), girl on back, hetero, couple, naked (male|boy|man|guy), creampie, open mouth",
+      "neg": ""
+    },
+    "blowjob": {
+      "pos": "(deepthroat blowjob|deepthroating:1.2), (looking up:0.6), (saliva dripping:1.2), naked ((man|male|guy|boy|dude):1.4), (extreme:0.7) close-up shot, facial",
+      "neg": "",
+      "feet_visible": false
+    },
+    "against_wall": {
+      "pos": "(sex with a white ((man|male|boy|guy|dude):1.6):1.8), fucking, (standing sex:1.2), (against wall:0.9), (sweaty skin:0.4), (creampie:0.4), (open mouth:0.8)",
+      "feet_visible": false,
+      "face_visible": false,
+      "neg": "chair, lesbian, futa, sitting, too many legs, deformed legs, bed, laying down, bench, kneeling, on the floor, blowjob, fellatio"
+    },
+    "back_peek": {
+      "pos": "standing, back view, ass presentation, low angle, focus on ass",
+      "breasts_visible": false
+    },
+    "sitting": {
+      "pos": "(sitting on a chair:1.4), ((spreading|crossing) legs:0.9), high angle",
+      "feet_visible": false
+    },
+    "kneeling1": {
+      "pos": "(kneeling:1.2), facing viewer, extreme close-up, legs spread apart, high angle",
+      "feet_visible": false
+    },
+    "standing_doggy": {
+      "pos": "(standing doggystyle sex:2), nude (man|male|boy|guy|dude), standing sex from behind, hetero, couple, bent over, (creampie|dripping pussy:0.6), (focus on girl:1.6), (lifting leg:0.6), (gaping anus:0.8), open mouth, over shoulder",
+      "feet_visible": false,
+      "neg": "kneeling, bed"
+    },
+    "cowgirl": {
+      "pos": "(cowgirl position|riding a man|riding cowgirl:1.1), (naked (man|male|guy|boy|dude):1.2), (eyes (closed|shut):1),  creampie, vaginal sex, open mouth, (arched back|leaning back:0.8), (spreading pussy:0.7), (head tilted backwards|looking up:0.9), sweaty skin, sweaty face",
+      "neg": ""
+    }
+  },
+
+  "skin_prompt": {
+    "substitutions": {
+      "white": "(nordic:1.2)",
+      "tan": "(latina:1.4)",
+      "black": "(african:1.4)"
+    }
+  },
+
+  "outfit_prompt": {
+    "colors": {
+      "black": "#000000",
+      "blue": "#0000ff",
+      "brown": "#a52a2a",
+      "green": "#008000",
+      "grey": "#808080",
+      "orange": "#ffa500",
+      "pink": "#ffc0cb",
+      "purple": "#800080",
+      "red": "#ff0000",
+      "violet": "#ee82ee",
+      "white": "#ffffff",
+      "yellow": "#ffff00"
+    },
+
+    "substitutions": {
+      "summer dress": "sundress, medium dress",
+      "evening dress": {
+        "pos": "cocktail dress",
+        "neg": "cocktail" },
+      "slips": "sandals",
+      "jeans": {
+        "pos": "low cut skinny jeans, cameltoe",
+        "allow_color": true },
+      "sleeveless top": "sleeveless shirt",
+      "suit pants": "high-waist pants, cameltoe",
+      "sandal heels": "high heel sandals",
+      "bathrobe": {
+        "pos": "(open short (kimono:0.9) robe:1.1)",
+        "neg": "jacket" },
+      "booty shorts": "short shorts",
+      "daisy dukes": {
+        "pos": "short denim shorts, (cameltoe:1.4)",
+        "allow_color": true },
+      "naked apron": "",
+      "apron": {
+        "pos": "(square full apron:1.2)",
+        "neg": "(topless:1.4), frills, frill trim",
+        "allow_color": true }, 
+      "tied sweater": "cardigan",
+      "thin bra": "bra, see-through clothes",
+      "cute panties": "lace-trimmed panties, cameltoe",
+      "kitty babydoll": "lace babydoll, (no panties:0.3)",
+      "lace sweater": "cropped lace sweater",
+      "leggings": "yoga pants, (cameltoe:1.4)",
+      "pumps": "pumps",
+      "high heels": "high heels",
+      "heels": "heels",
+      "lace crop top": "lace crop top",
+      "brazilian waxed": "bare",
+      "neatly trimmed": {
+        "pos": "natural pubic hair" },
+      "naked": "(naked|nude)",
+      "buttoned blouse": "blouse, long sleeves",
+      "lacy one piece": {
+        "pos": "teddy, lace",
+        "neg": "teddy bear" },
+      "lacy one piece bottom": "cameltoe",
+      "tiny lace panties": "lowleg panties, lace panties, cameltoe",
+      "teddy": "babydoll",
+      "cropped t-shirt": "cropped shirt, midriff",
+      "belted skirt": "skirt, belt, medium skirt",
+      "frilly dress": "short dress, frilled dress",
+      "business vest": {
+        "pose": "inner vest",
+        "neg": "(shirt:0.2), (blouse:0.2), pin" },
+      "vest": {
+        "pos": "open (canvas|silk|satin|fabric|suede|(leather:0.5)) vest",
+        "neg": "(shirt:0.2), (blouse:0.2), (sleeves:0.4), pin" },
+      "garter and fishnets": "fishnet thighhighs, garter straps",
+      "fishnets": "fishnet thigh-high socks",
+      "frilly longsleeve": "shirt, long sleeves, frilled sleeves",
+      "lace skirt": "short skirt, lace-trimmed skirt",
+      "suit jacket": "(formal jacket|blazer)",
+      "tall boots": "thigh boots",
+      "short sleeve blouse": "blouse, short sleeves",
+      "belted top": "crop top, midriff, cleavage, frilled shirt",
+      "pinafore": "pinafore dress",
+      "long sweater": "sweater, long sleeves",
+      "capris": "capri pants",
+      "two part dress": "short dress, plunging neckline, side slit",
+      "boy panties": "boyshort panties, cameltoe",
+      "bralette": "sports bra",
+      "cotton panties": "panties, cameltoe",
+      "thin panties": "transparent panties, cameltoe",
+      "mini skirt": "miniskirt",
+      "wrapped blouse": "blouse, cleavage cutout",
+      "leotard bottom": "cameltoe",
+      "face cum": "(cum on face:1.1)",
+      "tit cum": "(cum on breasts:1.6)",
+      "mouth cum": "(cum dripping from mouth:1.2)",
+      "creampie": "(cum dripping from pussy:1.2)",
+      "ass cum": "(cum dripping from anus:1.2)",
+      "stomach cum": "(cum on stomach:1.2)",
+      "forearm gloves": "lace gloves"
+    }
+  },
+  "details_prompt": {
+    "substitutions": {
+      "saturated": "blonde",
+      "chocolate brown": "dark brown",
+      "strawberry blonde": "light pink",
+      "golden blonde": "blonde",
+      "barbie blonde": "blonde",
+      "chestnut": "dark brown",
+      "off black": "black",
+      "dirty blonde": "blonde",
+      "toasted wheat": "light brown",
+      "ginger red": "orange",
+      "dark auburn": "dark red",
+      "bobbed hair": "bob cut",
+      "messy short hair": "medium hair, blowing in the wind",
+      "messy hair": "messy hair, long hair",
+      "braided hair": {
+        "pos": "crown braid, medium hair",
+        "neg": "crown, tiara, princess, bangs, headband, hairpin" },
+      "curly bun hair": "single hair bun, curly hair",
+      "windswept short hair": "medium hair, asymmetrical bangs, hair blowing in the wind",
+      "shaved side hair": {
+        "pos": "straight short hair, one side of the head shaved",
+        "neg": "curly"
+      }
+    }
+  }
+}

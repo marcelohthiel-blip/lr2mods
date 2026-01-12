@@ -1,0 +1,241 @@
+{
+  "Name": "IllustriousXL_PersonalMix_v3",
+  "Model": "illustriousXLPersonalMerge_v30Noob10based",
+  "settings": {
+    "cgi": "3.0",
+    "resolution": "1024x1344",
+    "steps": "16",
+    "sampler": "Euler a",
+    "scheduler": "SGM Uniform",
+    "adetailer": "face_yolov8n.pt"
+  },
+  "positive_prompt_prefix" : "masterpiece, best quality, newest, absurdres, highres, 1girl",
+  "negative_prompt_prefix" : "multiple views, worst quality, old, early, low quality, lowres, signature, username, logo, bad hands, mutated hands, mammal, anthro, furry, ambiguous form, feral, semi-anthro, 2girl",
+  "style_prompt": "black background, simple background",
+  "negative_prompt": "",
+  "expression_prompt": {
+    "above160": "smile, happy",
+    "above120": "smile",
+    "above100": "",
+    "sad": "serious",
+    "angry": "serious"
+  },
+  "age_prompt": {
+    "above60": {"pos": "old woman"},
+    "above50": {"pos": "old woman"},
+    "above30": {"pos": "mature female"},
+    "above20": {"neg": "loli"},
+    "above17": {"neg": "loli"},
+    "add_explicit_age_prompt": false
+  },
+  "breasts_prompt": {
+    "AA": "flat chest",
+    "A": "small breasts",
+    "B": "small breasts",
+    "C": "medium breasts",
+    "D": "medium breasts",
+    "DD": "large breasts",
+    "DDD": "large breasts",
+    "E": "huge breasts",
+    "F": "huge breasts",
+    "FF": "huge breasts"
+  },
+  "body_type_prompt":{
+    "default": "",
+    "thin": "skinny",
+    "curvy": "plump",
+    "default_preg": "pregnant"
+  },
+  "position_prompt": {
+    "default": {
+      "pos": "full body, straight-on, standing, arms at sides, (solo)"
+    },
+    "stand2": {
+      "pos": "full body, straight-on, standing, adjusting hair, (solo)"
+    },
+    "stand3": {
+      "pos": "full body, straight-on, standing, arms at sides, (solo)"
+    },
+    "stand4": {
+      "pos": "full body, straight-on, standing, hand on own hip, (solo)"
+    },
+    "stand5": {
+      "pos": "full body, straight-on, standing, hand on own chest, (solo)"
+    },
+    "walking_away": {
+      "pos": "full body, from behind, facing away, back, (solo)",
+      "face_visible": false,
+      "breasts_visible": false
+    },
+    "kissing": {
+      "pos": "upper body, straight-on, blush, pov, incoming kiss, open mouth, half-closed eyes, (solo)",
+      "neg": "smile, happy, serious",
+      "feet_visible": false
+    },
+    "doggy": {
+      "pos": "from above, vaginal, prone bone, pov, large penis, nude male, (solo focus)",
+      "face_visible": false
+    },
+    "missionary": {
+      "pos": "facing viewer, vaginal, missionary, blush, sweat, open mouth, pov, large penis, nude male, (solo focus)",
+      "neg": "smile, happy, serious"
+    },
+    "blowjob": {
+      "pos": "facing viewer, fellatio, pov, large penis, nude male, (solo focus)",
+      "neg": "smile, happy, serious",
+      "feet_visible": false
+    },
+    "against_wall": {
+      "pos": "cowboy shot, from behind, vaginal, sex from behind, standing sex, blush, sweat, pov, large penis, nude male, (solo focus)",
+      "feet_visible": false,
+      "neg": "smile, happy, serious"
+    },
+    "back_peek": {
+      "pos": "full body, standing, from behind, looking back, (solo)",
+      "breasts_visible": false
+    },
+    "sitting": {
+      "pos": "cowboy shot, straight-on, sitting, on chair, hands on own legs, smile, (solo)",
+      "feet_visible": false
+    },
+    "kneeling1": {
+      "pos": "upper body, facing viewer, kneeling, blush, (solo)",
+      "feet_visible": false
+    },
+    "standing_doggy": {
+      "pos": "cowboy shot, from behind, vaginal, sex from behind, bent over, blush, sweat, pov, large penis, nude male, (solo focus)",
+      "feet_visible": false,
+      "neg": "smile, happy, serious"
+    },
+    "cowgirl": {
+      "pos": "full body, vaginal, cowgirl, blush, sweat, open mouth, pov, large penis, nude male, (solo focus)",
+      "neg": "smile, happy, serious"
+    }
+  },
+  "skin_prompt": {
+    "substitutions": {
+      "white": "",
+      "tan": "dark",
+      "black": "dark"
+    }
+  },
+  "outfit_prompt": {
+    "colors": {
+      "black": "#000000",
+      "blue": "#0000ff",
+      "brown": "#a52a2a",
+      "green": "#008000",
+      "grey": "#808080",
+      "orange": "#ffa500",
+      "pink": "#ffc0cb",
+      "purple": "#800080",
+      "red": "#ff0000",
+      "violet": "#ee82ee",
+      "white": "#ffffff",
+      "yellow": "#ffff00"
+    },
+    "substitutions": {
+      "summer dress": "sundress, medium dress",
+      "evening dress": {
+        "pos": "cocktail dress",
+        "neg": "cocktail"
+      },
+      "slips": "sandals",
+      "jeans": {
+        "pos": "skinny jeans",
+        "allow_color": false
+      },
+      "sleeveless top": "sleeveless shirt",
+      "suit pants": "pants, high-waist pants",
+      "sneakers": "flats",
+      "sandal heels": "high heel sandals",
+      "bathrobe": "bathrobe, cleavage",
+      "booty shorts": "short shorts",
+      "daisy dukes": {
+        "pos": "denim shorts, cutoffs",
+        "allow_color": false
+      },
+      "tied sweater": "cardigan",
+      "thin bra": "bra, see-through clothes",
+      "cute panties": "lace-trimmed panties",
+      "kitty babydoll": "camisole, midriff",
+      "lace sweater": "cropped sweater, cleavage, midriff",
+      "leggings": "yoga pants",
+      "pumps": "high heels, pumps",
+      "high heels": "stiletto heels",
+      "heels": "kitten heels",
+      "lace crop top": "crop top, lace trim",
+      "brazilian waxed": "",
+      "neatly trimmed": {
+        "override_pos": "sparse pubic hair, pussy"
+      },
+      "naked": "nude",
+      "buttoned blouse": "blouse, long sleeves",
+      "lacy one piece": {
+        "pos": "teddy, lace",
+        "neg": "teddy bear"
+      },
+      "lacy one piece bottom": "",
+      "tiny lace panties": "lowleg panties, lace panties",
+      "teddy": "babydoll",
+      "cropped t-shirt": "cropped shirt, midriff",
+      "belted skirt": "skirt, belt, medium skirt",
+      "frilly dress": "short dress, frilled dress",
+      "business vest": "cardigan vest, short sleeves",
+      "garter and fishnets": "fishnet thighhighs, garter straps",
+      "fishnets": "fishnet thighhighs",
+      "frilly longsleeve": "shirt, long sleeves, frilled sleeves",
+      "lace skirt": "short skirt, lace-trimmed skirt",
+      "suit jacket": "suit jacket, long sleeves",
+      "tall boots": "thigh boots",
+      "short sleeve blouse": "blouse, short sleeves",
+      "belted top": "crop top, midriff, cleavage, frilled shirt",
+      "pinafore": "pinafore dress, blouse",
+      "long sweater": "sweater, long sleeves",
+      "capris": "capri pants",
+      "two part dress": "short dress, plunging neckline, side slit",
+      "boy panties": "boyshort panties",
+      "bralette": "sports bra",
+      "cotton panties": "panties",
+      "thin panties": "panties, see-through clothes",
+      "mini skirt": "miniskirt",
+      "wrapped blouse": "blouse, cleavage cutout",
+      "leotard bottom": "",
+      "face cum": "facial",
+      "tit cum": "cum on breasts",
+      "mouth cum": "cum in mouth",
+      "creampie": "cum in pussy",
+      "ass cum": "cum in ass",
+      "stomach cum": "cum on body",
+      "forearm gloves": "bridal gauntlets"
+    }
+  },
+  "details_prompt": {
+    "substitutions": {
+      "saturated": "blonde",
+      "chocolate brown": "dark brown",
+      "strawberry blonde": "light pink",
+      "golden blonde": "blonde",
+      "barbie blonde": "blonde",
+      "chestnut": "dark brown",
+      "off black": "black",
+      "dirty blonde": "blonde",
+      "toasted wheat": "light brown",
+      "ginger red": "orange",
+      "dark auburn": "dark red",
+      "bobbed hair": "bob cut",
+      "messy short hair": "wavy hair, short hair",
+      "messy hair": "messy hair, long hair",
+      "braided hair": {
+        "pos": "crown braid, medium hair",
+        "neg": "crown"
+      },
+      "curly bun hair": "single hair bun, curly hair",
+      "windswept short hair": "medium hair, asymmetrical bangs",
+      "shaved side hair": {
+        "pos": "asymmetrical hair, medium hair",
+        "neg": "undercut"
+      }
+    }
+  }
+}

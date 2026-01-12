@@ -1,0 +1,473 @@
+This document is designed to be a character and mechanic guide for Lab Rats 2 Reformulate.
+Whenever possible I will include code snippets and explanations for anyone trying to figure out how specific game mechanics work
+If you are looking for something specific, the table of contents contains a search code in brackets to ctrl F and find in the document.
+
+***** THIS DOCUMENT CONTAINS SPOILERS *****
+
+
+
+
+** Table of Contents **
+Game Mechanics
+- Event timing and Game Speeds
+
+
+Character Guides
+- Alexia    [CHAR01]
+- Ashley    [CHAR02]
+- Camilla   [CHAR03]
+- Candace   [CHAR04]
+- Christina [CHAR05]
+- Christine [CHAR06]
+- Ellie     [CHAR07]
+- Emily     [CHAR08]
+- Erica     [CHAR09]
+- Gabrielle [CHAR10]
+- Iris      [CHAR11]
+- Jennifer  [CHAR12]
+- Kaya      [CHAR13]
+- Lily      [CHAR14]
+- Myrabelle [CHAR15]
+- Naomi     [CHAR16]
+- Ophelia   [CHAR17]
+- Penelope  [CHAR18]
+- Rebecca   [CHAR19]
+- Sarah     [CHAR20]
+- Starbuck  [CHAR21]
+- Stephanie [CHAR22]
+
+** Teamups **
+- Kaya and Nora                 [TMKAYNOR]
+- Starbuck and Rebecca          [TMUSTAREB]
+- Rebecca, Jennifer, and Lily   [TMUJENREBLIL]
+
+** Game Mechanics **
+
+* Event Timing and Game Speeds *
+In order to control the pacing of story related character content, most characters utilize a time delay system between events
+Events are split into multiple types, but the most common are Love, Lust, and Obedience events.
+There are 4 different tiers of time delays that change based on game speed settings, Quick, Standard, Epic, and Marathon. They are as follows for each game speed.
+Tier 0: [-1, 1, 1, 2]   - In standard, these would be events that generally occur daily.
+Tier 1: [1, 3, 5, 7]    - In standard, these events should be available twice a week.
+Tier 2: [3, 7, 12, 15]  - In standard, these events would occur once a week.
+Tier 3: [7, 14[ 20, 30]]    - In standard, these events would occur every couple of weeks.
+When the game checks to see if a story event can be run, the standard timing checks for a Tier 2 number of days for any event from the same story, or tier 1 delay from any other story.
+
+Example: Sarah had a lust event on day 15. She would be eligible with standard timing for a love event on day 18, and a new lust event on day 22 with standard timing
+Waiting on time delays is often shown in the progress screen as "XYZ needs a few days before she is ready to progress"
+In character guides, I will do my best to note when there is non standard timing delays for events.
+Events that often have non standard timing: Taboo Breaks, storylines that have multiple events in a row, etc.
+
+
+** Character Guides **
+[CHAR12]
+* Jennifer *
+* Introduction *
+Jennifer is the player character's biological mother. She has a daughter, Lily, a sister, Rebecca, and a niece, Gabrielle, in game.
+Her husband and MC's father is not in game for unknown reasons.
+In the previous Lab Rats game, she was a recipient of early serum creations and still has a faint memory of the actions from the first game.
+At the beginning of the game, she takes out a home equity loan to finance MC's new pharmaceutical business, while she works an office job of her own to pay bills.
+Jennifer is accessible from the start of the game and has multiple side stories and story arcs.
+As a family member, sexual encounters with Jennifer use her opinion of Incest to modify sluttiness requirements.
+She also has a series of taboo break quests that occur as MC advances sexually with her.
+Sexual positions are locked behind her taboo quests, EG only foreplay is available until kissing event is complete.
+
+*Taboo Breaks*
+These events occur automatically in response to MC breaking her taboos. There are four stages to these events.
+Each stage has a list of relevant taboos it looks for to be broken, and when one gets broken it will trigger an event the next day.
+
+Kissing - Relevant taboos: Bare Tits, Bare Pussy, Kissing, Touching Body, Touching Vagina
+Completion requirements:
+    - Jennifer likes or loves Incest
+    - Broken relevant taboo a number of times (3 - her opinion of kissing)
+    - Be her boss
+    - Complete a series of household tasks
+
+Oral - Relevant taboos: Sucking Cock, Licking Pussy
+Completion requirements:
+    - Jennifer loves Incest
+    - Broken relevant taboo a number of times (4 - her opinion of giving blowjob and getting head)
+    - Be her boss
+    - Increase love score with Rebecca
+
+Anal - Relevant taboos: Anal Sex
+Completion requirements:
+    - Jennifer likes or loves Incest
+    - Broken relevant taboo a number of times (5 - her opinion of anal sex)
+    - Be her boss
+    - Pay $20000
+
+Vaginal - Relevant taboos: Vaginal Sex
+Completion requirements:
+    - Jennifer likes Incest - Begins a quest to convince her. Inspect her room and use her computer (default password is MC's first name) to complete
+    - Broken relevant taboo a number of times (8 - her opinion of vaginal)
+    - Be her boss
+
+* Love Events *
+Currently, Jennifer's only love based events invole getting her to agree to have a secret romantic relationship with MC.
+To begin this set of events, MC must first be able to ask her to become his girlfriend, which requires a base Love score of 60
+Once asked, players need to be able to complete one of the following conditions:
+- Pay $5000
+- Jennifer has 200 obedience
+- Jennifer is pregnant with MC's child
+After this, a second check must be made which currently only has 2 passing conditions.
+- Jennifer like or loves Incest
+- Jennifer AND MC BOTH have 4 or more charisma (Jennifer starts the game with 4 charisma)
+After this, a third and final check occurs, requiring MC to convince Lily to be okay with the relationship. To pass this check, one of the following conditions must be met.
+- MC convinces Lily to accept the relationship (Explained next)
+- Lily is already dating MC
+- Lily has an Intelligence of 1 or 0
+If Players take the route that requires concvincing Lily to be okay with the relationship, they can approach and talk to her.
+The conditions for her to be okay with the relationship is atleast one of the following.
+- Lily likes or loves Incest
+- Pay Lily $10000 OR negotiate down to $5000 with a love score penalty
+- Lily Obedience score of at least 200
+Once Lily has been convinced, or if one of the previous conditions was met, MC convinces Jennifer to become his girlfriend, and she gains girlfriend status.
+*NOTE*: There is not currently any unique content for Jennifer if she is MC's girlfriend.
+
+* Lust Events *
+Jennifer has 2 separate lust story arcs.
+Her lust story arc initially involves her becoming her workplace's slut, and involves themes around her having sex with her boss with MC's knowledge and permission.
+Her alternate lust story has MC convince her to quit her job and become MC's personal secretary. At this time, this arc is not filled in with story content.
+
+* Office Slut Arc *
+Jennifer begins her office slut arc when reaching a sluttiness score of 30. MC can talk to her on any weekday night in her bedroom and it will begin the event.
+In the first event, Jennifer indicates she is applying for a promotion. She asks MC for advice.
+If players suggest to advantage of her womanly charms, they have an opportunity to create a sexy outfit for her. They also get a small stat bump in the follow up event.
+After a few days, Jennifer will have another event available where she share the result of the initial interview.
+2-4 days later, she let's MC know that she is up for her second round interview.
+MC can then help Jennifer prep for her interview any Evening of Night time slot until her interview day
+*NOTE* If players fail to help her prep for her interview, she will fail her interview and will not be hired as a personal secretary. At this time, this cannot be reversed.
+If MC instructed Jennifer to be slutty, or to be friendly and have a slutty outfit, she will get the promotion to secretary.
+Otherwise, Jennifer does receive the promotion and does not continue this arc. This cannot be reversed.
+
+The next event requires 7 days to pass since her promotion and a sluttiness score of at least 40.
+Jennifer approaches MC with a fear of being replaced, giving him Four options.
+- Seduce your boss. This option completes this event, and gives players the opportunity to get a look and Jennifer's tits or a blowjob.
+- Get bigger tits. To complete this, MC must help Jennifer go up in breast size. Detailed below.
+- I'll take care of it. MC agrees to talk to her boss to see if he can find out what is going on. Detailed below
+- Do Nothing.  This option is actually identical to the one above, but with different dialogue. MC must approach Jennifer's boss to continue.
+
+If Player's choose option 3 or 4 from above, they can then go the Jennifer's work and talk to her boss.
+At the beginning of this event, player's will also be introduced to Iris, the daughter of Jennifer's boss, if they haven't already met her.
+Once meeting her boss, MC is presented with a choice. Choose between:
+- I want to help you. Player's set a foundation for future cooperation with Jennifer's boss.
+- I want you to back off. Player's set Jennifer's boss as a future rival.
+Regardless of the player's decision, they can than have a quick date with Iris.
+After the date, regardless of the outcome, players must then help Jennifer get bigger tits to continue this story arc.
+
+Get bigger tits. This event requires MC to help Jennifer get a more sizeable chest. Talk to her about it to initiate this action.
+To successfully complete this action, players must complete one of the following:
+- Pay $7,000 for implants
+- Give her a breast increasing serum
+- Jennifer has obedience of at least 130 and love of 30, and she is willing to pay for it herself.
+
+If player's instructed Jennifer to seduce her boss or get bigger tits, she will report her success a few days later.
+
+Jennifer's next event is a bridge event, requiring only standard time spacing from her previous event
+She will give MC an update on her office slut antics in the kitchen. If she previously only offer her boss her tits, she now updates to giving him blowjobs.
+
+Jennifer's next event requires 60 sluttiness, standard event timing, and occurs in the kitchen.
+Jennifer reveals her boss has been paying prostitutes and is in distress.
+Player's convince her to fuck her boss, and if the positions are available, have the option of fucking her vaginally or anally.
+Jennifer will have a follow up event with MC TIER_1 days later, reporting succesful seduction.
+If Jennifer is off birth control at this time, she goes on it and stays on it for as long as she has her current job.
+
+The next event is a short reminder event for MC to check in with Jennifer's boss. It is a standard timing delay until it fires.
+After the reminder, MC can go to Jennifer's work again, and approach her boss.
+
+When player's approach Jennifer's boss, if they have met before, they automatically continue their previous path.
+If this is their first meeting, player's have a choice
+- I've been helping you. Players indicate a desire to work with him. He gives a conditional offer of a partnership if MC can convince Jennifer to go bareback
+- Watch your step. Players warn him about indiscretions, and he throws them out. At this time, this is the end of this content.
+
+If player's cooperate with Jennifer's boss, the last scene in the current build requires Jennifer to have at least 70 sluttiness and to love "bareback sex"
+Player's can talk to Jennifer in the kitchen and she recounts letting her boss fuck her bare.
+
+This is the end of this story arc for now. Further interactions at work have not yet been written.
+
+*Personal Secretary Arc*
+MC can approach Jennifer while she is at work and convince her to quit, ending the above storyline.
+Player's can convince her instead to work for them, and if she was already a secretary for her previous boss, they can hire her directly into the personal secretary position.
+
+Jennifer then has a first day at work event, and at the end, player's can "set the tone" for her employment.
+The possible endings for this event if she is hired straight to personal secretary are:
+Pep talk- the default if no other conditions are met
+Tit Fuck- If she was giving her previous boss tit fucks
+Blowjob - If she was giving her previous boss blowjobs AND she has completed her first taboo break quest (kissing, nudity)
+Sex     - If she was fucking her previous boss AND she has completed her oral sex taboo break.
+
+If players hire Jennifer to the company but not straight to the personal secretary role, they have similar options.
+pep talk- the default
+Tit Fuck - If her first taboo break is complete (kissing, nudity)
+Blowjob - if her oral taboo break is complete
+Anal - If her anal sex taboo break is complete
+Sex - if her vaginal sex taboo break is complete.
+
+Additional personal secretary content has not yet been completed.
+
+* Obedience Arc *
+Jennifer's obedience story arc involves her submitting to MC as he takes over the role of being the man of the house.
+There are currently two repeatable scenes in this arc, Saturday Morning Bills and Breakfast in Bed.
+
+This arc begins with Saturday Morning Bills. MC overhears that Jennifer is falling behind on bills and has the opportunity to help out.
+This event triggers the first Saturday and every Saturday morning thereafter.
+
+Saturday Morning Bills
+This event occurs every SAturday morning. Each week, MC can help with bigger and bigger bills, with each step up increasing Jennifer's obedience more.
+Each bill also has a temporary obedience increase that lasts for the duration of this event, and have a slightly higher obedience payout the first time the level is reached.
+The options are...
+$50 - 1 Obedience (max 120) and 5 temporary obedience
+$100 - 5 initially, 2 thereafter (max 140) and 10 temporary obedience
+$200 - 5 initially, 2 thereafter (max 160) and 15 temporary obedience
+$500 - 7 initially, 2 thereafter (max 180) and 20 temporary obedience
+Do Not Contribute - -2 Obedience and the event ends.
+The first time MC contributes, Jennifer says thanks and offers to do MC's laundry as thank you.
+In subsequent events, Jennifer asks if there is anything she can do to make it up to MC.
+Players have the following options:
+- Ask for a kiss - Always available
+    If Jennifer has a kissing taboo, we break it. If she has 30 effective sluttiness to kissing, we can start a makeout session, allowing progression to any available sex actions
+- Just say please - Always available
+    No sexual content, but gives a straight +2 additional obedience (max 160)
+- Show me your tits - Requires 10 effective sluttiness to showing her tits, or a combined 20 sluttiness and obedience.
+    Breaks bare tits taboo. If Jennifer is slutty enough and has atleast 140 obedience players can end the scene with a tit fuck.
+- Handjob - Requires 20 effective sluttiness to touching penis, or a combined 30 sluttiness and obedience
+    Breaks relevant taboos. MC can convert to blowjob with atleast 35 sluttiness and kissing taboo break complete.
+    If she likes or loves masturbating, she'll touch herself throughout
+    Opinions on giving blowjobs and drinking cum also change dialogue.
+- Show me your ass - Requires 30 effective sluttiness to baring pussy, or a combined 40 sluttiness and obedience
+    With 140 obedience, Player's can turn it into a spanking session.
+    Spanking session gets better dialogue with positive opinions of: Being Submissive, Being Fingered, and Anal Sex
+Straight to blowjob and staright to sex scenes are also planned but not yet implemented.
+The Saturday Morning Bills even is designed to give players the opportunity to begin building obedience with Jennifer early in the game.
+
+Breakfast in Bed
+The next event in Jennifer's obedience story is the introduction to Breakfast in Bed and requires 120 obedience.
+It should trigger automatically with standard timing after the first Saturday Morning Bills event.
+In the introduction event, Jennifer surprises MC with breakfast in bed as a way of saying thank you for helping out around the house and with bills.
+She asks MC about his business and agrees to help him test serums in the evenings after she gets off work.
+After the introduction, Breakfast in Bed unlocks as a repeatable event that MC can ask for from Jennifer the night before, and can also be triggered randomly.
+MC can request breakfast in bed more frequently the higher Jennifer's obedience scores go.
+Breakfast in Bed has Jennifer entertain MC while he eats and has 5 stages.
+- Small Talk - the default
+- Strip Tease - Requires 20 effective sluttiness
+- Handjob - Requires first taboo quest complete and 30 effective sluttiness
+- Blowjob - Requires 50 sluttiness
+- Reverse Cowgirl - Requires 70 sluttiness and anal taboo quest complete
+
+Jennifer's next obedience event occurs at 140 obedience with standard timing.
+In this event, MC finds Jennifer cleaning house in her work clothes with an apron over it.
+He convinces her to wear the apron instead of a shirt when around the house.
+This event then unlocks the ability to gives her outfits to wear around the house.
+For now, these outfits require atleast- a bra, panties, bottoms, and an apron.
+
+This is the end of her obedience related content so far.
+
+* Other Events *
+Jennifer has a group scene with Rebecca and Lily.
+
+
+[CHAR13]
+* Kaya *
+* Introduction *
+Kaya is a native college girl who is just finished up with ther undergrad and wants to complete her masters program at the local university.
+The primary character driving factor is her sick mother, her only family member. She dreams of gaining medical skills needed to cure her.
+She is exceptionally smart, but due to beliefs and circumstances has never had a serious boyfriend.
+She is a virgin at the start of the game and works at the coffee shop on weekends only.
+Kaya does not become accessible until players have achieved Tier 1 serum creation, and then can be met during weekends at the Coffee Shop.
+Kaya also has a unique mechanic. She has religious beliefs forbidding contraception, and since she is also a virgin, she refuses penetrative sex until talking with MC about condom usage.
+Players will have the condom talk with Kaya either during their Lust arc, Love arc, or if players are advancind her sluttiness rapidly, at 70 sluttiness.
+
+
+* Love Events *
+Kaya's first love event requires 20 love, which can be achieved through small talk. At 20 love, ask Kaya about getting drinks out.
+She claims she is busy this weekend, and asks for MC to come back next weekend. Players return the next weekend and then have their first date with Kaya.
+During the date, players learn that Kaya needs a sponsor to begin her masters program at the university. After the date, talk to Nora at the university to sponsor her.
+After this, Kaya attends class at the university every Tuesday and Thursday, and players can view the introdiction to the Nora and Kaya teamup on Thursday.
+
+Kaya's second love event requires 40 love. Check with Kaya at the coffee shop on the weekend, and she reveals she ALSO needs a residency/internship program to continue taking class.
+Player's then talk to Nora again to offer to sponsor Kaya's internship.
+Kaya then comes to work for MC as an intern, working in research every Monday, Wednesday, and Friday. Her first day of work will be the next Monday.
+
+Kaya's third love event required 60 love and for her to have had the condom talk with players.
+It can be achieved at the end of a workday at the office (Monday, Wednesday, or Friday)
+In this event, if players have not yet had sex with Kaya, they can take her virginity.
+
+No further love scenes have been written.
+
+
+* Lust Events*
+Kaya's first lust event requires her to be a university student (Via the 20 love event) and to have 20 sluttiness.
+Kaya asks for study help at the University (Tuesday or Thursday)
+
+Kaya's second lust event requires 40 sluttiness. She calls MC and asks to go out drinking with him for her 21st birthday.
+It automatically triggers with sluttiness and a time delay on a weekday.
+
+Kaya's third lust event requires 60 sluttiness and the condom talk to be complete.
+She sends MC a booty call text, and MC fucks her at her place and spends the night.
+
+No further Lust scenes have been written.
+
+
+* Obedience Events *
+Kaya's Obedience events have not yet been created.
+
+* Pregnancy Events *
+Kaya has some pregnancy content written, but they are not yet available in game.
+
+* Other Events *
+If players order coffee when Kaya is working at the coffee shop, they get unique dialogue.
+
+[CHAR19]
+* Rebecca *
+* Introduction *
+Rebecca is MC's aunt, and has a daughter named Gabrielle.
+You meet Rebecca automatically as part of the main game story events and it is time delayed only. MC currently has no options to delay or change the timing of the introduction.
+Once Rebecca and Gabrielle move in with MC, she begins the move out process also automatically 18 to 24 days after moving in.
+Once she begins to move out, MC can offer to help her move once per day during the morning, afternoon, or evening.
+Completing move events adds to her stats as it progresses.
+Once Rebecca and Gabrielle have moved into their own place, their introduction is complete.
+
+* Solo Events *
+Currently Rebecca only has one recurring event, where you drink wine with her at her place in the evening time slot.
+This event acts as a dosing opportunity and also passes a stage of time.
+This event has some progression already built in, with her sluttiness rating acting as the primary progression factor.
+Sluttiness cutoffs for event progression are at: 40, 50, 60, 70, and 80 sluttiness ratings.
+
+* Love Events *
+Rebecca's love related events are currently all still in development are not yet implemented in the game.
+
+* Lust Events*
+Rebecca's first lust event requires 20 sluttiness and uses standard event timing. It can occur anytime after she has moved in with MC.
+It will trigger automatically during a night time slot, and will progress into the next morning.
+
+Rebecca's second lust event requires that she has moved out of MC's house, has 40 sluttiness, Gabrielle isn't home, and uses standard event timing.
+It is a room entry event, so look on the map for an indicator that an event is ready.
+
+Rebecca's third lust event requires 60 sluttiness and uses standard event timing. It also requires you to play the family card game scene (See Rebecca Teamups)
+It triggers automatically after the family card game night on Wednesday nights.
+
+Rebecca's fourth lust event is a quick follow up after the third event. It uses a Tier 1 time delay to determine her readiness for it.
+It trigger's with MC activating her recurring wine drinking event. If MC is unable to give her a second glass of wine, it means her time delay has not yet passed.
+
+This is the end of Rebecca's Lust events in the current build.
+
+* Obedience Events *
+Rebecca has two timed events that have no obedience requirement to kick off her obedience story line.
+The first event is a room entry event that uses standard timing AFTER Rebecca has moved into her own apartment.
+The second event is a mandatory event with standard timing with no other interaction from players.
+
+Rebecca's third obedience event requires 120 obedience and requires standard timing. It is a room entry event for Rebecca in the evening time slot.
+
+The third event stacks the fourth and fifth events to show up automatically.
+The fourth event starts the next Tuesday morning, and the fifth event that evening.
+
+After Rebecca's fifth obedience event, she is now considered a financial consultant for MC and can be found in the marketing department every Tuesday after.
+MC pays her $100 in wages every Tuesday, and gains 2 new bonuses.
+- A discount to business upkeep equal to Rebecca's Intelligence * 10 up to a maximum of $100 daily
+- An increase to maximum business efficiency equal to Rebecca's Charisma up to a maximum of 10%
+These bonuses are calculated at the end of day every Tuesday, and can go up or down over time.
+To maximize these bonuses, try and dose her with serums that increase those two stats with a serum that will last into the night time on Tuesdays.
+
+This is the end of Rebecca's Obedience events in the current build.
+
+[CHAR21]
+* Starbuck *
+* Introduction *
+Starbuck is a character that is available for MC to meet from the beginning of the game.
+You meet her by visiting the Sex Shop during open hours, which consister of
+- Afternoons and Evenings on Monday thru Friday
+- Morning and Afternoon on Saturday
+
+Starbuck has a base storyline that involves investing in her shop. Her intro requires a $1000 investment from MC
+After investing, Starbuck direct deposits a portion of her profits to MC's account daily.
+
+* Sex Shop Investment *
+Investment into the sex shop opens up in stages, with investment in basic, advanced, and then fetish merchandise.
+The calculation for how much money Starbuck pays MC each day is a bit complicated.
+First, we calculate a baseline investment percentage rate. This rate varies based on story progress, but it acts as a multiplier.
+At the very beginning, this multiplier is just 1.0, but later in the game it can go as high as 7.0 or 8.0
+Basic inventory is considered high margin, so it has the largest investment rate.
+For basic inventory, the daily profit MC receives is (Amount invested * Investment Percentage Rate * .01)
+For advanced and fetish inventory, this becomes (Amount invested * Investment Percentage Rate * 0.004)
+Advanced inventory can be unlocked after story progress with Starbuck and requires $5000 initial investment
+Fetish inventory can be unlocked after further story progress and requires a $15000 initial investment
+After initial investments, basic, advanced, and fetish inventory can be further invested in an additional 5 times, totaling:
+$6000 basic
+$30000 advance
+$90000 fetish
+There is NO story requirements for additional investments, but they do increase the daily profits as described above.
+
+In addition, there are 5 promotional material events available. Each promotional event increases the Investment Percentage Rate by 1%
+Each promotional event unlocks through Starbuck's story arcs. Only one arc is required to unlock each event, but they unlock the fastest through her sluttiness events.
+In addition, the third promo event requires an initial investment in advanced inventory
+The fifth promo event requires initial investment in fetish inventory
+
+* Love Story *
+Starbuck's first love event requires basic inventory investment, 20 love, and uses standard event time.
+It triggers automatically in a morning time slot.
+
+This is end of Starbuck's love content currently implemented in game.
+
+* Lust story *
+This set of events involve STarbuck trying out new items she is stocking in the shop.
+The first lust event requires 20 sluttiness, and is a room entry event when Starbuck is working at the sex shop in the evening only.
+After the event, MC will gain a temporary perk that increases his foreplay skill and can purchased again at the sex shop weekly.
+
+The second lust event requires 40 sluttiness and is a room entry event when Starbuck is working at the sex shop in the evening only.
+After the MC, MC gains a temporary perk that increases his oral skill and can be repurchased weekly.
+
+The third and fourth events have no yet been written, but are currently in the game in outline form, because they have purchasable perks locked behind them.
+They follow the same patterns as above, requiring 60 and 80 sluttiness, respectively, and are room entry events in the evening at the shop using standard timing.
+
+* Obedience Story *
+The first obedience event with Starbuck requires 120 obedience, and is a room entry event at the sex shop in the evening time slot.
+
+The second obedience event is a limit break style event. The intro requires 140 obedience, has standard timing, and is a room entry event.
+After the intro, follow up with Starbuck two days later. The cycle can be broken with either 3 repeats, making Starbuck love skimpy outfits, or if MC has invested in advanced inventory.
+If we fail to break the cycle, Starbuck loses 10 obedience. We can retry the event again with 140 obedience.
+
+Once we complete the second event, you can talk to Starbuck and customize her wardrobe for while she is working as a cashier.
+For now, outfits added to this wardrobe must be between 20 and 40 sluttiness and must not exposed her tits or vagina.
+
+This is the end of Starbuck's obedience content currently implemented in game.
+
+
+** Teamups **
+
+[TMKAYNOR]
+* Kaya and Nora *
+The Kaya and Nora teamup is triggered thru Kaya's love story arc.
+The intro is a mandatory event and triggers the first Thursday that Kaya is in class.
+Currently only the introduction is written, but is planned to recur ever Thursday in the evening.
+
+[TMUSTAREB]
+* Starbuck and Rebecca *
+The Starbuck and Rebecca teamup is triggered thru both girls obedience storylines.
+- Rebecca's 2nd obedience event
+- Starbuck's 1st obedience event
+Dialogue should then lead players to talk to Rebecca, then Starbuck, to set up their first meeting.
+
+
+The first round of their teamup is mandatory for MC to attend and occurs on Friday morning.
+After the initial event, it becomes a room entry event type that occurs every Friday morning.
+The teamup is a multiple choice type teamup.
+The first option unlocks automatically after the introduction.
+The second option requires both Starbuck and Rebecca to have a sluttiness of at least 40
+
+Additional options have not yet been added to the game.
+
+[TMUJENREBLIL]
+* Jennifer, Rebecca, and Lily *
+
+This teamup takes the form of a family game night that occurs every Wednesday night.
+The introduction is triggered by Rebecca and requires:
+- Jennifer 20 love
+- Rebecca 20 love
+- You have had wine with Rebecca in her apartment at least once
+Once unlocked, family game night is a recurring room entry event each Wednesday night at MC's house.
+The event type is multiple choice, and current there are three choices available.
+- Play for fun - Unlocked from the beginning
+- Play for Cash - Requires Lily, Rebecca, and Jennifer all have at least 30 love
+- Strip - Requires Lily, Rebecca, and Jennifer all have at least 30 sluttiness
+    - If your partner has at least 50 sluttiness, she will now tell MC to masturbate while watching the losers dance.
